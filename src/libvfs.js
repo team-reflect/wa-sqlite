@@ -2,6 +2,12 @@
 // This file should be included in the build with --post-js.
 
 (function() {
+  // For debugging bundles, add a way to identify a libsql build.
+  Module['libsql'] = true;
+  globalThis.addEventListener('libsql', function(event) {
+    console.log('libsql build');
+  }, { once: true });
+
   // This list of methods must match exactly with libvfs.c.
   const VFS_METHODS = [
     'xOpen',
