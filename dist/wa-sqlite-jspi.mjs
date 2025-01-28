@@ -28,6 +28,14 @@ var readyPromise = new Promise((resolve, reject) => {
   readyPromiseResolve = resolve;
   readyPromiseReject = reject;
 });
+["_RegisterExtensionFunctions","_malloc","_free","_sqlite3_aggregate_context","_sqlite3_auto_extension","_sqlite3_autovacuum_pages","_sqlite3_backup_finish","_sqlite3_backup_init","_sqlite3_backup_pagecount","_sqlite3_backup_remaining","_sqlite3_backup_step","_sqlite3_bind_blob","_sqlite3_bind_blob64","_sqlite3_bind_double","_sqlite3_bind_int","_sqlite3_bind_int64","_sqlite3_bind_null","_sqlite3_bind_parameter_count","_sqlite3_bind_parameter_index","_sqlite3_bind_parameter_name","_sqlite3_bind_pointer","_sqlite3_bind_text","_sqlite3_bind_text16","_sqlite3_bind_text64","_sqlite3_bind_value","_sqlite3_bind_zeroblob","_sqlite3_bind_zeroblob64","_sqlite3_blob_bytes","_sqlite3_blob_close","_sqlite3_blob_open","_sqlite3_blob_read","_sqlite3_blob_reopen","_sqlite3_blob_write","_sqlite3_busy_handler","_sqlite3_busy_timeout","_sqlite3_cancel_auto_extension","_sqlite3_changes","_sqlite3_changes64","_sqlite3_clear_bindings","_sqlite3_close","_sqlite3_close_v2","_sqlite3_collation_needed","_sqlite3_collation_needed16","_sqlite3_column_blob","_sqlite3_column_bytes","_sqlite3_column_bytes16","_sqlite3_column_count","_sqlite3_column_double","_sqlite3_column_int","_sqlite3_column_int64","_sqlite3_column_name","_sqlite3_column_name16","_sqlite3_column_text","_sqlite3_column_text16","_sqlite3_column_type","_sqlite3_column_value","_sqlite3_commit_hook","_sqlite3_compileoption_get","_sqlite3_compileoption_used","_sqlite3_complete","_sqlite3_complete16","_sqlite3_config","_sqlite3_context_db_handle","_sqlite3_create_collation","_sqlite3_create_collation16","_sqlite3_create_collation_v2","_sqlite3_create_filename","_sqlite3_create_function","_sqlite3_create_function16","_sqlite3_create_function_v2","_sqlite3_create_module","_sqlite3_create_module_v2","_sqlite3_create_window_function","_sqlite3_data_count","_sqlite3_database_file_object","_sqlite3_db_cacheflush","_sqlite3_db_config","_sqlite3_db_filename","_sqlite3_db_handle","_sqlite3_db_mutex","_sqlite3_db_name","_sqlite3_db_readonly","_sqlite3_db_release_memory","_sqlite3_db_status","_sqlite3_declare_vtab","_sqlite3_deserialize","_sqlite3_drop_modules","_sqlite3_errcode","_sqlite3_errmsg","_sqlite3_errmsg16","_sqlite3_error_offset","_sqlite3_errstr","_sqlite3_exec","_sqlite3_expanded_sql","_sqlite3_extended_errcode","_sqlite3_extended_result_codes","_sqlite3_file_control","_sqlite3_filename_database","_sqlite3_filename_journal","_sqlite3_filename_wal","_sqlite3_finalize","_sqlite3_free","_sqlite3_free_filename","_sqlite3_free_table","_sqlite3_get_autocommit","_sqlite3_get_auxdata","_sqlite3_get_clientdata","_sqlite3_get_table","_sqlite3_hard_heap_limit64","_sqlite3_initialize","_sqlite3_interrupt","_sqlite3_is_interrupted","_sqlite3_keyword_check","_sqlite3_keyword_count","_sqlite3_keyword_name","_sqlite3_last_insert_rowid","_sqlite3_libversion","_sqlite3_libversion_number","_sqlite3_limit","_sqlite3_log","_sqlite3_malloc","_sqlite3_malloc64","_sqlite3_memory_highwater","_sqlite3_memory_used","_sqlite3_mprintf","_sqlite3_msize","_sqlite3_next_stmt","_sqlite3_open","_sqlite3_open16","_sqlite3_open_v2","_sqlite3_os_end","_sqlite3_os_init","_sqlite3_overload_function","_sqlite3_prepare","_sqlite3_prepare16","_sqlite3_prepare16_v2","_sqlite3_prepare16_v3","_sqlite3_prepare_v2","_sqlite3_prepare_v3","_sqlite3_progress_handler","_sqlite3_randomness","_sqlite3_realloc","_sqlite3_realloc64","_sqlite3_release_memory","_sqlite3_reset","_sqlite3_reset_auto_extension","_sqlite3_result_blob","_sqlite3_result_blob64","_sqlite3_result_double","_sqlite3_result_error","_sqlite3_result_error16","_sqlite3_result_error_code","_sqlite3_result_error_nomem","_sqlite3_result_error_toobig","_sqlite3_result_int","_sqlite3_result_int64","_sqlite3_result_null","_sqlite3_result_pointer","_sqlite3_result_subtype","_sqlite3_result_text","_sqlite3_result_text16","_sqlite3_result_text16be","_sqlite3_result_text16le","_sqlite3_result_text64","_sqlite3_result_value","_sqlite3_result_zeroblob","_sqlite3_result_zeroblob64","_sqlite3_rollback_hook","_sqlite3_serialize","_sqlite3_set_authorizer","_sqlite3_set_auxdata","_sqlite3_set_clientdata","_sqlite3_set_last_insert_rowid","_sqlite3_shutdown","_sqlite3_sleep","_sqlite3_snprintf","_sqlite3_soft_heap_limit64","_sqlite3_sourceid","_sqlite3_sql","_sqlite3_status","_sqlite3_status64","_sqlite3_step","_sqlite3_stmt_busy","_sqlite3_stmt_explain","_sqlite3_stmt_isexplain","_sqlite3_stmt_readonly","_sqlite3_stmt_status","_sqlite3_str_append","_sqlite3_str_appendall","_sqlite3_str_appendchar","_sqlite3_str_appendf","_sqlite3_str_errcode","_sqlite3_str_finish","_sqlite3_str_length","_sqlite3_str_new","_sqlite3_str_reset","_sqlite3_str_value","_sqlite3_str_vappendf","_sqlite3_strglob","_sqlite3_stricmp","_sqlite3_strlike","_sqlite3_strnicmp","_sqlite3_system_errno","_sqlite3_table_column_metadata","_sqlite3_test_control","_sqlite3_threadsafe","_sqlite3_total_changes","_sqlite3_total_changes64","_sqlite3_trace_v2","_sqlite3_txn_state","_sqlite3_update_hook","_sqlite3_uri_boolean","_sqlite3_uri_int64","_sqlite3_uri_key","_sqlite3_uri_parameter","_sqlite3_user_data","_sqlite3_value_blob","_sqlite3_value_bytes","_sqlite3_value_bytes16","_sqlite3_value_double","_sqlite3_value_dup","_sqlite3_value_encoding","_sqlite3_value_free","_sqlite3_value_frombind","_sqlite3_value_int","_sqlite3_value_int64","_sqlite3_value_nochange","_sqlite3_value_numeric_type","_sqlite3_value_pointer","_sqlite3_value_subtype","_sqlite3_value_text","_sqlite3_value_text16","_sqlite3_value_text16be","_sqlite3_value_text16le","_sqlite3_value_type","_sqlite3_version","_sqlite3_vfs_find","_sqlite3_vfs_register","_sqlite3_vfs_unregister","_sqlite3_vmprintf","_sqlite3_vsnprintf","_sqlite3_vtab_collation","_sqlite3_vtab_config","_sqlite3_vtab_distinct","_sqlite3_vtab_in","_sqlite3_vtab_in_first","_sqlite3_vtab_in_next","_sqlite3_vtab_nochange","_sqlite3_vtab_on_conflict","_sqlite3_vtab_rhs_value","_sqlite3_wal_autocheckpoint","_sqlite3_wal_checkpoint","_sqlite3_wal_checkpoint_v2","_sqlite3_wal_hook","_memory","___indirect_function_table","_getSqliteFree","_libauthorizer_set_authorizer","_libfunction_create_function","_libhook_commit_hook","_libhook_update_hook","_libprogress_progress_handler","_libvfs_vfs_register","_main","onRuntimeInitialized"].forEach((prop) => {
+  if (!Object.getOwnPropertyDescriptor(readyPromise, prop)) {
+    Object.defineProperty(readyPromise, prop, {
+      get: () => abort('You are getting ' + prop + ' on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js'),
+      set: () => abort('You are setting ' + prop + ' on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js'),
+    });
+  }
+});
 
 // Determine the runtime environment we are in. You can customize this by
 // setting the ENVIRONMENT setting at compile time (see settings.js).
@@ -69,6 +77,12 @@ function locateFile(path) {
 // Hooks that are implemented differently in different runtime environments.
 var readAsync, readBinary;
 
+if (ENVIRONMENT_IS_SHELL) {
+
+  if ((typeof process == 'object' && typeof require === 'function') || typeof window == 'object' || typeof WorkerGlobalScope != 'undefined') throw new Error('not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)');
+
+} else
+
 // Note that this includes Node.js workers when relevant (pthreads is enabled).
 // Node.js workers are detected as a combination of ENVIRONMENT_IS_WORKER and
 // ENVIRONMENT_IS_NODE.
@@ -95,6 +109,8 @@ if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
     scriptDirectory = scriptDirectory.substr(0, scriptDirectory.replace(/[?#].*/, '').lastIndexOf('/')+1);
   }
 
+  if (!(typeof window == 'object' || typeof WorkerGlobalScope != 'undefined')) throw new Error('not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)');
+
   {
 // include: web_or_worker_shell_read.js
 if (ENVIRONMENT_IS_WORKER) {
@@ -108,6 +124,7 @@ if (ENVIRONMENT_IS_WORKER) {
   }
 
   readAsync = async (url) => {
+    assert(!isFileURI(url), "readAsync does not work with file:// URLs");
     var response = await fetch(url, { credentials: 'same-origin' });
     if (response.ok) {
       return response.arrayBuffer();
@@ -118,6 +135,7 @@ if (ENVIRONMENT_IS_WORKER) {
   }
 } else
 {
+  throw new Error('environment detection error');
 }
 
 var out = Module['print'] || console.log.bind(console);
@@ -128,17 +146,46 @@ Object.assign(Module, moduleOverrides);
 // Free the object hierarchy contained in the overrides, this lets the GC
 // reclaim data used.
 moduleOverrides = null;
+checkIncomingModuleAPI();
 
 // Emit code to handle expected values on the Module object. This applies Module.x
 // to the proper local x. This has two benefits: first, we only emit it if it is
 // expected to arrive, and second, by using a local everywhere else that can be
 // minified.
 
-if (Module['arguments']) arguments_ = Module['arguments'];
+if (Module['arguments']) arguments_ = Module['arguments'];legacyModuleProp('arguments', 'arguments_');
 
-if (Module['thisProgram']) thisProgram = Module['thisProgram'];
+if (Module['thisProgram']) thisProgram = Module['thisProgram'];legacyModuleProp('thisProgram', 'thisProgram');
 
 // perform assertions in shell.js after we set up out() and err(), as otherwise if an assertion fails it cannot print the message
+// Assertions on removed incoming Module JS APIs.
+assert(typeof Module['memoryInitializerPrefixURL'] == 'undefined', 'Module.memoryInitializerPrefixURL option was removed, use Module.locateFile instead');
+assert(typeof Module['pthreadMainPrefixURL'] == 'undefined', 'Module.pthreadMainPrefixURL option was removed, use Module.locateFile instead');
+assert(typeof Module['cdInitializerPrefixURL'] == 'undefined', 'Module.cdInitializerPrefixURL option was removed, use Module.locateFile instead');
+assert(typeof Module['filePackagePrefixURL'] == 'undefined', 'Module.filePackagePrefixURL option was removed, use Module.locateFile instead');
+assert(typeof Module['read'] == 'undefined', 'Module.read option was removed');
+assert(typeof Module['readAsync'] == 'undefined', 'Module.readAsync option was removed (modify readAsync in JS)');
+assert(typeof Module['readBinary'] == 'undefined', 'Module.readBinary option was removed (modify readBinary in JS)');
+assert(typeof Module['setWindowTitle'] == 'undefined', 'Module.setWindowTitle option was removed (modify emscripten_set_window_title in JS)');
+assert(typeof Module['TOTAL_MEMORY'] == 'undefined', 'Module.TOTAL_MEMORY has been renamed Module.INITIAL_MEMORY');
+legacyModuleProp('asm', 'wasmExports');
+legacyModuleProp('readAsync', 'readAsync');
+legacyModuleProp('readBinary', 'readBinary');
+legacyModuleProp('setWindowTitle', 'setWindowTitle');
+var IDBFS = 'IDBFS is no longer included by default; build with -lidbfs.js';
+var PROXYFS = 'PROXYFS is no longer included by default; build with -lproxyfs.js';
+var WORKERFS = 'WORKERFS is no longer included by default; build with -lworkerfs.js';
+var FETCHFS = 'FETCHFS is no longer included by default; build with -lfetchfs.js';
+var ICASEFS = 'ICASEFS is no longer included by default; build with -licasefs.js';
+var JSFILEFS = 'JSFILEFS is no longer included by default; build with -ljsfilefs.js';
+var OPFS = 'OPFS is no longer included by default; build with -lopfs.js';
+
+var NODEFS = 'NODEFS is no longer included by default; build with -lnodefs.js';
+
+assert(!ENVIRONMENT_IS_NODE, 'node environment detected but not enabled at build time.  Add `node` to `-sENVIRONMENT` to enable.');
+
+assert(!ENVIRONMENT_IS_SHELL, 'shell environment detected but not enabled at build time.  Add `shell` to `-sENVIRONMENT` to enable.');
+
 // end include: shell.js
 
 // include: preamble.js
@@ -152,7 +199,11 @@ if (Module['thisProgram']) thisProgram = Module['thisProgram'];
 // An online HTML version (which may be of a different version of Emscripten)
 //    is up at http://kripken.github.io/emscripten-site/docs/api_reference/preamble.js.html
 
-var wasmBinary = Module['wasmBinary'];
+var wasmBinary = Module['wasmBinary'];legacyModuleProp('wasmBinary', 'wasmBinary');
+
+if (typeof WebAssembly != 'object') {
+  err('no native wasm support detected');
+}
 
 // Wasm globals
 
@@ -178,12 +229,12 @@ var EXITSTATUS;
 /** @type {function(*, string=)} */
 function assert(condition, text) {
   if (!condition) {
-    // This build was created without ASSERTIONS defined.  `assert()` should not
-    // ever be called in this configuration but in case there are callers in
-    // the wild leave this simple abort() implementation here for now.
-    abort(text);
+    abort('Assertion failed' + (text ? ': ' + text : ''));
   }
 }
+
+// We used to include malloc/free by default in the past. Show a helpful error in
+// builds with assertions.
 
 // Memory management
 
@@ -219,7 +270,52 @@ function updateMemoryViews() {
 }
 
 // end include: runtime_shared.js
+assert(!Module['STACK_SIZE'], 'STACK_SIZE can no longer be set at runtime.  Use -sSTACK_SIZE at link time')
+
+assert(typeof Int32Array != 'undefined' && typeof Float64Array !== 'undefined' && Int32Array.prototype.subarray != undefined && Int32Array.prototype.set != undefined,
+       'JS engine does not provide full typed array support');
+
+// If memory is defined in wasm, the user can't provide it, or set INITIAL_MEMORY
+assert(!Module['wasmMemory'], 'Use of `wasmMemory` detected.  Use -sIMPORTED_MEMORY to define wasmMemory externally');
+assert(!Module['INITIAL_MEMORY'], 'Detected runtime INITIAL_MEMORY setting.  Use -sIMPORTED_MEMORY to define wasmMemory dynamically');
+
 // include: runtime_stack_check.js
+// Initializes the stack cookie. Called at the startup of main and at the startup of each thread in pthreads mode.
+function writeStackCookie() {
+  var max = _emscripten_stack_get_end();
+  assert((max & 3) == 0);
+  // If the stack ends at address zero we write our cookies 4 bytes into the
+  // stack.  This prevents interference with SAFE_HEAP and ASAN which also
+  // monitor writes to address zero.
+  if (max == 0) {
+    max += 4;
+  }
+  // The stack grow downwards towards _emscripten_stack_get_end.
+  // We write cookies to the final two words in the stack and detect if they are
+  // ever overwritten.
+  HEAPU32[((max)>>2)] = 0x02135467;
+  HEAPU32[(((max)+(4))>>2)] = 0x89BACDFE;
+  // Also test the global address 0 for integrity.
+  HEAPU32[((0)>>2)] = 1668509029;
+}
+
+function checkStackCookie() {
+  if (ABORT) return;
+  var max = _emscripten_stack_get_end();
+  // See writeStackCookie().
+  if (max == 0) {
+    max += 4;
+  }
+  var cookie1 = HEAPU32[((max)>>2)];
+  var cookie2 = HEAPU32[(((max)+(4))>>2)];
+  if (cookie1 != 0x02135467 || cookie2 != 0x89BACDFE) {
+    abort(`Stack overflow! Stack cookie has been overwritten at ${ptrToString(max)}, expected hex dwords 0x89BACDFE and 0x2135467, but received ${ptrToString(cookie2)} ${ptrToString(cookie1)}`);
+  }
+  // Also test the global address 0 for integrity.
+  if (HEAPU32[((0)>>2)] != 0x63736d65 /* 'emsc' */) {
+    abort('Runtime error: The application has corrupted its heap memory area (address zero)!');
+  }
+}
 // end include: runtime_stack_check.js
 var __ATPRERUN__  = []; // functions called before the runtime is initialized
 var __ATINIT__    = []; // functions called during startup
@@ -240,7 +336,10 @@ function preRun() {
 }
 
 function initRuntime() {
+  assert(!runtimeInitialized);
   runtimeInitialized = true;
+
+  checkStackCookie();
 
   
 if (!Module['noFSInit'] && !FS.initialized)
@@ -252,11 +351,13 @@ TTY.init();
 }
 
 function preMain() {
+  checkStackCookie();
   
   callRuntimeCallbacks(__ATMAIN__);
 }
 
 function postRun() {
+  checkStackCookie();
 
   if (Module['postRun']) {
     if (typeof Module['postRun'] == 'function') Module['postRun'] = [Module['postRun']];
@@ -296,6 +397,10 @@ function addOnPostRun(cb) {
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc
 
+assert(Math.imul, 'This browser does not support Math.imul(), build with LEGACY_VM_SUPPORT or POLYFILL_OLD_MATH_FUNCTIONS to add in a polyfill');
+assert(Math.fround, 'This browser does not support Math.fround(), build with LEGACY_VM_SUPPORT or POLYFILL_OLD_MATH_FUNCTIONS to add in a polyfill');
+assert(Math.clz32, 'This browser does not support Math.clz32(), build with LEGACY_VM_SUPPORT or POLYFILL_OLD_MATH_FUNCTIONS to add in a polyfill');
+assert(Math.trunc, 'This browser does not support Math.trunc(), build with LEGACY_VM_SUPPORT or POLYFILL_OLD_MATH_FUNCTIONS to add in a polyfill');
 // end include: runtime_math.js
 // A counter of dependencies for calling run(). If we need to
 // do asynchronous work before running, increment this and
@@ -306,9 +411,15 @@ function addOnPostRun(cb) {
 // the dependencies are met.
 var runDependencies = 0;
 var dependenciesFulfilled = null; // overridden to take different actions when all run dependencies are fulfilled
+var runDependencyTracking = {};
+var runDependencyWatcher = null;
 
 function getUniqueRunDependency(id) {
-  return id;
+  var orig = id;
+  while (1) {
+    if (!runDependencyTracking[id]) return id;
+    id = orig + Math.random();
+  }
 }
 
 function addRunDependency(id) {
@@ -316,6 +427,33 @@ function addRunDependency(id) {
 
   Module['monitorRunDependencies']?.(runDependencies);
 
+  if (id) {
+    assert(!runDependencyTracking[id]);
+    runDependencyTracking[id] = 1;
+    if (runDependencyWatcher === null && typeof setInterval != 'undefined') {
+      // Check for missing dependencies every few seconds
+      runDependencyWatcher = setInterval(() => {
+        if (ABORT) {
+          clearInterval(runDependencyWatcher);
+          runDependencyWatcher = null;
+          return;
+        }
+        var shown = false;
+        for (var dep in runDependencyTracking) {
+          if (!shown) {
+            shown = true;
+            err('still waiting on run dependencies:');
+          }
+          err(`dependency: ${dep}`);
+        }
+        if (shown) {
+          err('(end of list)');
+        }
+      }, 10000);
+    }
+  } else {
+    err('warning: run dependency added without ID');
+  }
 }
 
 function removeRunDependency(id) {
@@ -323,7 +461,17 @@ function removeRunDependency(id) {
 
   Module['monitorRunDependencies']?.(runDependencies);
 
+  if (id) {
+    assert(runDependencyTracking[id]);
+    delete runDependencyTracking[id];
+  } else {
+    err('warning: run dependency removed without ID');
+  }
   if (runDependencies == 0) {
+    if (runDependencyWatcher !== null) {
+      clearInterval(runDependencyWatcher);
+      runDependencyWatcher = null;
+    }
     if (dependenciesFulfilled) {
       var callback = dependenciesFulfilled;
       dependenciesFulfilled = null;
@@ -342,8 +490,6 @@ function abort(what) {
   err(what);
 
   ABORT = true;
-
-  what += '. Build with -sASSERTIONS for more info.';
 
   // Use a wasm runtime error, because a JS error might be seen as a foreign
   // exception, which means we'd run destructors on it. We need the error to
@@ -386,6 +532,17 @@ var isDataURI = (filename) => filename.startsWith(dataURIPrefix);
  */
 var isFileURI = (filename) => filename.startsWith('file://');
 // end include: URIUtils.js
+function createExportWrapper(name, nargs) {
+  return (...args) => {
+    assert(runtimeInitialized, `native function \`${name}\` called before runtime initialization`);
+    var f = wasmExports[name];
+    assert(f, `exported native function \`${name}\` not found`);
+    // Only assert for too many arguments. Too few can be valid since the missing arguments will be zero filled.
+    assert(args.length <= nargs, `native function \`${name}\` called with ${args.length} args but expects ${nargs}`);
+    return f(...args);
+  };
+}
+
 // include: runtime_exceptions.js
 // end include: runtime_exceptions.js
 function findWasmBinary() {
@@ -437,6 +594,10 @@ async function instantiateArrayBuffer(binaryFile, imports) {
   } catch (reason) {
     err(`failed to asynchronously prepare wasm: ${reason}`);
 
+    // Warn on some common problems.
+    if (isFileURI(wasmBinaryFile)) {
+      err(`warning: Loading from a file URI (${wasmBinaryFile}) is not supported in most browsers. See https://emscripten.org/docs/getting_started/FAQ.html#how-do-i-run-a-local-webserver-for-testing-why-does-my-program-stall-in-downloading-or-preparing`);
+    }
     abort(reason);
   }
 }
@@ -489,10 +650,12 @@ async function createWasm() {
 
     wasmMemory = wasmExports['memory'];
     
+    assert(wasmMemory, 'memory not found in wasm exports');
     updateMemoryViews();
 
     wasmTable = wasmExports['__indirect_function_table'];
     
+    assert(wasmTable, 'table not found in wasm exports');
 
     addOnInit(wasmExports['__wasm_call_ctors']);
 
@@ -503,9 +666,15 @@ async function createWasm() {
   addRunDependency('wasm-instantiate');
 
   // Prefer streaming instantiation if available.
+  // Async compilation can be confusing when an error on the page overwrites Module
+  // (for example, if the order of elements is wrong, and the one defining Module is
+  // later), so we save Module and check it later.
+  var trueModule = Module;
   function receiveInstantiationResult(result) {
     // 'result' is a ResultObject object which has both the module and instance.
     // receiveInstance() will swap in the exports (to Module.asm) so they can be called
+    assert(Module === trueModule, 'the Module object should not be replaced during async compilation - perhaps the order of HTML elements is wrong?');
+    trueModule = null;
     // TODO: Due to Closure regression https://github.com/google/closure-compiler/issues/3193, the above line no longer optimizes out down to the following line.
     // When the regression is fixed, can restore the above PTHREADS-enabled path.
     receiveInstance(result['instance']);
@@ -547,6 +716,121 @@ var tempDouble;
 var tempI64;
 
 // include: runtime_debug.js
+// Endianness check
+(() => {
+  var h16 = new Int16Array(1);
+  var h8 = new Int8Array(h16.buffer);
+  h16[0] = 0x6373;
+  if (h8[0] !== 0x73 || h8[1] !== 0x63) throw 'Runtime error: expected the system to be little-endian! (Run with -sSUPPORT_BIG_ENDIAN to bypass)';
+})();
+
+if (Module['ENVIRONMENT']) {
+  throw new Error('Module.ENVIRONMENT has been deprecated. To force the environment, use the ENVIRONMENT compile-time option (for example, -sENVIRONMENT=web or -sENVIRONMENT=node)');
+}
+
+function legacyModuleProp(prop, newName, incoming=true) {
+  if (!Object.getOwnPropertyDescriptor(Module, prop)) {
+    Object.defineProperty(Module, prop, {
+      configurable: true,
+      get() {
+        let extra = incoming ? ' (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)' : '';
+        abort(`\`Module.${prop}\` has been replaced by \`${newName}\`` + extra);
+
+      }
+    });
+  }
+}
+
+function ignoredModuleProp(prop) {
+  if (Object.getOwnPropertyDescriptor(Module, prop)) {
+    abort(`\`Module.${prop}\` was supplied but \`${prop}\` not included in INCOMING_MODULE_JS_API`);
+  }
+}
+
+// forcing the filesystem exports a few things by default
+function isExportedByForceFilesystem(name) {
+  return name === 'FS_createPath' ||
+         name === 'FS_createDataFile' ||
+         name === 'FS_createPreloadedFile' ||
+         name === 'FS_unlink' ||
+         name === 'addRunDependency' ||
+         // The old FS has some functionality that WasmFS lacks.
+         name === 'FS_createLazyFile' ||
+         name === 'FS_createDevice' ||
+         name === 'removeRunDependency';
+}
+
+/**
+ * Intercept access to a global symbol.  This enables us to give informative
+ * warnings/errors when folks attempt to use symbols they did not include in
+ * their build, or no symbols that no longer exist.
+ */
+function hookGlobalSymbolAccess(sym, func) {
+  if (typeof globalThis != 'undefined' && !Object.getOwnPropertyDescriptor(globalThis, sym)) {
+    Object.defineProperty(globalThis, sym, {
+      configurable: true,
+      get() {
+        func();
+        return undefined;
+      }
+    });
+  }
+}
+
+function missingGlobal(sym, msg) {
+  hookGlobalSymbolAccess(sym, () => {
+    warnOnce(`\`${sym}\` is not longer defined by emscripten. ${msg}`);
+  });
+}
+
+missingGlobal('buffer', 'Please use HEAP8.buffer or wasmMemory.buffer');
+missingGlobal('asm', 'Please use wasmExports instead');
+
+function missingLibrarySymbol(sym) {
+  hookGlobalSymbolAccess(sym, () => {
+    // Can't `abort()` here because it would break code that does runtime
+    // checks.  e.g. `if (typeof SDL === 'undefined')`.
+    var msg = `\`${sym}\` is a library symbol and not included by default; add it to your library.js __deps or to DEFAULT_LIBRARY_FUNCS_TO_INCLUDE on the command line`;
+    // DEFAULT_LIBRARY_FUNCS_TO_INCLUDE requires the name as it appears in
+    // library.js, which means $name for a JS name with no prefix, or name
+    // for a JS name like _name.
+    var librarySymbol = sym;
+    if (!librarySymbol.startsWith('_')) {
+      librarySymbol = '$' + sym;
+    }
+    msg += ` (e.g. -sDEFAULT_LIBRARY_FUNCS_TO_INCLUDE='${librarySymbol}')`;
+    if (isExportedByForceFilesystem(sym)) {
+      msg += '. Alternatively, forcing filesystem support (-sFORCE_FILESYSTEM) can export this for you';
+    }
+    warnOnce(msg);
+  });
+
+  // Any symbol that is not included from the JS library is also (by definition)
+  // not exported on the Module object.
+  unexportedRuntimeSymbol(sym);
+}
+
+function unexportedRuntimeSymbol(sym) {
+  if (!Object.getOwnPropertyDescriptor(Module, sym)) {
+    Object.defineProperty(Module, sym, {
+      configurable: true,
+      get() {
+        var msg = `'${sym}' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the Emscripten FAQ)`;
+        if (isExportedByForceFilesystem(sym)) {
+          msg += '. Alternatively, forcing filesystem support (-sFORCE_FILESYSTEM) can export this for you';
+        }
+        abort(msg);
+      }
+    });
+  }
+}
+
+// Used by XXXXX_DEBUG settings to output debug messages.
+function dbg(...args) {
+  // TODO(sbc): Make this configurable somehow.  Its not always convenient for
+  // logging to show up as warnings.
+  console.warn(...args);
+}
 // end include: runtime_debug.js
 // === Body ===
 // end include: preamble.js
@@ -589,6 +873,13 @@ var tempI64;
 
   var noExitRuntime = Module['noExitRuntime'] || true;
 
+  var ptrToString = (ptr) => {
+      assert(typeof ptr === 'number');
+      // With CAN_ADDRESS_2GB or MEMORY64, pointers are already unsigned.
+      ptr >>>= 0;
+      return '0x' + ptr.toString(16).padStart(8, '0');
+    };
+
   
     /**
      * @param {number} ptr
@@ -613,6 +904,14 @@ var tempI64;
   var stackRestore = (val) => __emscripten_stack_restore(val);
 
   var stackSave = () => _emscripten_stack_get_current();
+
+  var warnOnce = (text) => {
+      warnOnce.shown ||= {};
+      if (!warnOnce.shown[text]) {
+        warnOnce.shown[text] = 1;
+        err(text);
+      }
+    };
 
   var UTF8Decoder = typeof TextDecoder != 'undefined' ? new TextDecoder() : undefined;
   
@@ -654,6 +953,7 @@ var tempI64;
         if ((u0 & 0xF0) == 0xE0) {
           u0 = ((u0 & 15) << 12) | (u1 << 6) | u2;
         } else {
+          if ((u0 & 0xF8) != 0xF0) warnOnce('Invalid UTF-8 leading byte ' + ptrToString(u0) + ' encountered when deserializing a UTF-8 string in wasm memory to a JS string!');
           u0 = ((u0 & 7) << 18) | (u1 << 12) | (u2 << 6) | (heapOrArray[idx++] & 63);
         }
   
@@ -683,6 +983,7 @@ var tempI64;
      * @return {string}
      */
   var UTF8ToString = (ptr, maxBytesToRead) => {
+      assert(typeof ptr == 'number', `UTF8ToString expects a number (got ${typeof ptr})`);
       return ptr ? UTF8ArrayToString(HEAPU8, ptr, maxBytesToRead) : '';
     };
   var ___assert_fail = (condition, filename, line, func) =>
@@ -763,7 +1064,7 @@ var tempI64;
         return (view) => crypto.getRandomValues(view);
       } else
       // we couldn't find a proper implementation, as Math.random() is not suitable for /dev/random, see emscripten-core/emscripten/pull/7096
-      abort('initRandomDevice');
+      abort('no cryptographic support found for randomDevice. consider polyfilling it if you want to use something insecure like Math.random(), e.g. put this in a --pre-js: var crypto = { getRandomValues: (array) => { for (var i = 0; i < array.length; i++) array[i] = (Math.random()*256)|0 } };');
     };
   var randomFill = (view) => {
       // Lazily init on the first invocation.
@@ -852,6 +1153,7 @@ var tempI64;
     };
   
   var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
+      assert(typeof str === 'string', `stringToUTF8Array expects a string (got ${typeof str})`);
       // Parameter maxBytesToWrite is not optional. Negative values, 0, null,
       // undefined and false each don't write out any bytes.
       if (!(maxBytesToWrite > 0))
@@ -886,6 +1188,7 @@ var tempI64;
           heap[outIdx++] = 0x80 | (u & 63);
         } else {
           if (outIdx + 3 >= endIdx) break;
+          if (u > 0x10FFFF) warnOnce('Invalid Unicode code point ' + ptrToString(u) + ' encountered when serializing a JS string to a UTF-8 string in wasm memory! (Valid unicode code points should be in range 0-0x10FFFF).');
           heap[outIdx++] = 0xF0 | (u >> 18);
           heap[outIdx++] = 0x80 | ((u >> 12) & 63);
           heap[outIdx++] = 0x80 | ((u >> 6) & 63);
@@ -1071,6 +1374,7 @@ var tempI64;
     };
   
   var alignMemory = (size, alignment) => {
+      assert(alignment, "alignment argument is required");
       return Math.ceil(size / alignment) * alignment;
     };
   var mmapAlloc = (size) => {
@@ -1236,7 +1540,7 @@ var tempI64;
           }
         },
   lookup(parent, name) {
-          throw MEMFS.doesNotExistError;
+          throw new FS.ErrnoError(44);
         },
   mknod(parent, name, mode, dev) {
           return MEMFS.createNode(parent, name, mode, dev);
@@ -1293,6 +1597,7 @@ var tempI64;
           var contents = stream.node.contents;
           if (position >= stream.node.usedBytes) return 0;
           var size = Math.min(stream.node.usedBytes - position, length);
+          assert(size >= 0);
           if (size > 8 && contents.subarray) { // non-trivial, and typed array
             buffer.set(contents.subarray(position, position + size), offset);
           } else {
@@ -1301,6 +1606,8 @@ var tempI64;
           return size;
         },
   write(stream, buffer, offset, length, position, canOwn) {
+          // The data buffer should be a typed array view
+          assert(!(buffer instanceof ArrayBuffer));
           // If the buffer is located in main memory (HEAP), and if
           // memory can grow, we can't hold on to references of the
           // memory buffer, as they may get invalidated. That means we
@@ -1315,6 +1622,7 @@ var tempI64;
   
           if (buffer.subarray && (!node.contents || node.contents.subarray)) { // This write is from a typed array to a typed array?
             if (canOwn) {
+              assert(position === 0, 'canOwn must imply no weird position inside the file');
               node.contents = buffer.subarray(offset, offset + length);
               node.usedBytes = length;
               return length;
@@ -1402,6 +1710,7 @@ var tempI64;
   
   var asyncLoad = async (url) => {
       var arrayBuffer = await readAsync(url);
+      assert(arrayBuffer, `Loading data file "${url}" failed (no arrayBuffer).`);
       return new Uint8Array(arrayBuffer);
     };
   asyncLoad.isAsync = true;
@@ -1481,6 +1790,134 @@ var tempI64;
   
   
   
+  
+  
+  
+  var strError = (errno) => UTF8ToString(_strerror(errno));
+  
+  var ERRNO_CODES = {
+      'EPERM': 63,
+      'ENOENT': 44,
+      'ESRCH': 71,
+      'EINTR': 27,
+      'EIO': 29,
+      'ENXIO': 60,
+      'E2BIG': 1,
+      'ENOEXEC': 45,
+      'EBADF': 8,
+      'ECHILD': 12,
+      'EAGAIN': 6,
+      'EWOULDBLOCK': 6,
+      'ENOMEM': 48,
+      'EACCES': 2,
+      'EFAULT': 21,
+      'ENOTBLK': 105,
+      'EBUSY': 10,
+      'EEXIST': 20,
+      'EXDEV': 75,
+      'ENODEV': 43,
+      'ENOTDIR': 54,
+      'EISDIR': 31,
+      'EINVAL': 28,
+      'ENFILE': 41,
+      'EMFILE': 33,
+      'ENOTTY': 59,
+      'ETXTBSY': 74,
+      'EFBIG': 22,
+      'ENOSPC': 51,
+      'ESPIPE': 70,
+      'EROFS': 69,
+      'EMLINK': 34,
+      'EPIPE': 64,
+      'EDOM': 18,
+      'ERANGE': 68,
+      'ENOMSG': 49,
+      'EIDRM': 24,
+      'ECHRNG': 106,
+      'EL2NSYNC': 156,
+      'EL3HLT': 107,
+      'EL3RST': 108,
+      'ELNRNG': 109,
+      'EUNATCH': 110,
+      'ENOCSI': 111,
+      'EL2HLT': 112,
+      'EDEADLK': 16,
+      'ENOLCK': 46,
+      'EBADE': 113,
+      'EBADR': 114,
+      'EXFULL': 115,
+      'ENOANO': 104,
+      'EBADRQC': 103,
+      'EBADSLT': 102,
+      'EDEADLOCK': 16,
+      'EBFONT': 101,
+      'ENOSTR': 100,
+      'ENODATA': 116,
+      'ETIME': 117,
+      'ENOSR': 118,
+      'ENONET': 119,
+      'ENOPKG': 120,
+      'EREMOTE': 121,
+      'ENOLINK': 47,
+      'EADV': 122,
+      'ESRMNT': 123,
+      'ECOMM': 124,
+      'EPROTO': 65,
+      'EMULTIHOP': 36,
+      'EDOTDOT': 125,
+      'EBADMSG': 9,
+      'ENOTUNIQ': 126,
+      'EBADFD': 127,
+      'EREMCHG': 128,
+      'ELIBACC': 129,
+      'ELIBBAD': 130,
+      'ELIBSCN': 131,
+      'ELIBMAX': 132,
+      'ELIBEXEC': 133,
+      'ENOSYS': 52,
+      'ENOTEMPTY': 55,
+      'ENAMETOOLONG': 37,
+      'ELOOP': 32,
+      'EOPNOTSUPP': 138,
+      'EPFNOSUPPORT': 139,
+      'ECONNRESET': 15,
+      'ENOBUFS': 42,
+      'EAFNOSUPPORT': 5,
+      'EPROTOTYPE': 67,
+      'ENOTSOCK': 57,
+      'ENOPROTOOPT': 50,
+      'ESHUTDOWN': 140,
+      'ECONNREFUSED': 14,
+      'EADDRINUSE': 3,
+      'ECONNABORTED': 13,
+      'ENETUNREACH': 40,
+      'ENETDOWN': 38,
+      'ETIMEDOUT': 73,
+      'EHOSTDOWN': 142,
+      'EHOSTUNREACH': 23,
+      'EINPROGRESS': 26,
+      'EALREADY': 7,
+      'EDESTADDRREQ': 17,
+      'EMSGSIZE': 35,
+      'EPROTONOSUPPORT': 66,
+      'ESOCKTNOSUPPORT': 137,
+      'EADDRNOTAVAIL': 4,
+      'ENETRESET': 39,
+      'EISCONN': 30,
+      'ENOTCONN': 53,
+      'ETOOMANYREFS': 141,
+      'EUSERS': 136,
+      'EDQUOT': 19,
+      'ESTALE': 72,
+      'ENOTSUP': 138,
+      'ENOMEDIUM': 148,
+      'EILSEQ': 25,
+      'EOVERFLOW': 61,
+      'ECANCELED': 11,
+      'ENOTRECOVERABLE': 56,
+      'EOWNERDEAD': 62,
+      'ESTRPIPE': 135,
+    };
   var FS = {
   root:null,
   mounts:[],
@@ -1492,7 +1929,7 @@ var tempI64;
   currentPath:"/",
   initialized:false,
   ignorePermissions:true,
-  ErrnoError:class {
+  ErrnoError:class extends Error {
         name = 'ErrnoError';
         // We set the `name` property to be able to identify `FS.ErrnoError`
         // - the `name` is a standard ECMA-262 property of error objects. Kind of good to have it anyway.
@@ -1501,7 +1938,14 @@ var tempI64;
         // the test `err instanceof FS.ErrnoError` won't detect an error coming from another filesystem, causing bugs.
         // we'll use the reliable test `err.name == "ErrnoError"` instead
         constructor(errno) {
+          super(runtimeInitialized ? strError(errno) : '');
           this.errno = errno;
+          for (var key in ERRNO_CODES) {
+            if (ERRNO_CODES[key] === errno) {
+              this.code = key;
+              break;
+            }
+          }
         }
       },
   filesystems:null,
@@ -1697,6 +2141,7 @@ var tempI64;
         return FS.lookup(parent, name);
       },
   createNode(parent, name, mode, rdev) {
+        assert(typeof parent == 'object')
         var node = new FS.FSNode(parent, name, mode, rdev);
   
         FS.hashAddNode(node);
@@ -1829,6 +2274,7 @@ var tempI64;
       },
   getStream:(fd) => FS.streams[fd],
   createStream(stream, fd = -1) {
+        assert(fd >= -1);
   
         // clone it, so we can return an instance of FSStream
         stream = Object.assign(new FS.FSStream(), stream);
@@ -1896,6 +2342,7 @@ var tempI64;
         var completed = 0;
   
         function doCallback(errCode) {
+          assert(FS.syncFSRequests > 0);
           FS.syncFSRequests--;
           return callback(errCode);
         }
@@ -1922,6 +2369,11 @@ var tempI64;
         });
       },
   mount(type, opts, mountpoint) {
+        if (typeof type == 'string') {
+          // The filesystem was not included, and instead we have an error
+          // message stored in the variable.
+          throw type;
+        }
         var root = mountpoint === '/';
         var pseudo = !mountpoint;
         var node;
@@ -2000,6 +2452,7 @@ var tempI64;
   
         // remove this mount from the child mounts
         var idx = node.mount.mounts.indexOf(mount);
+        assert(idx !== -1);
         node.mount.mounts.splice(idx, 1);
       },
   lookup(parent, name) {
@@ -2466,6 +2919,7 @@ var tempI64;
         return stream.position;
       },
   read(stream, buffer, offset, length, position) {
+        assert(offset >= 0);
         if (length < 0 || position < 0) {
           throw new FS.ErrnoError(28);
         }
@@ -2492,6 +2946,7 @@ var tempI64;
         return bytesRead;
       },
   write(stream, buffer, offset, length, position, canOwn) {
+        assert(offset >= 0);
         if (length < 0 || position < 0) {
           throw new FS.ErrnoError(28);
         }
@@ -2563,6 +3018,7 @@ var tempI64;
         return stream.stream_ops.mmap(stream, length, position, prot, flags);
       },
   msync(stream, buffer, offset, length, mmapFlags) {
+        assert(offset >= 0);
         if (!stream.stream_ops.msync) {
           return 0;
         }
@@ -2725,6 +3181,9 @@ var tempI64;
         var stdin = FS.open('/dev/stdin', 0);
         var stdout = FS.open('/dev/stdout', 1);
         var stderr = FS.open('/dev/stderr', 1);
+        assert(stdin.fd === 0, `invalid handle for stdin (${stdin.fd})`);
+        assert(stdout.fd === 1, `invalid handle for stdout (${stdout.fd})`);
+        assert(stderr.fd === 2, `invalid handle for stderr (${stderr.fd})`);
       },
   staticInit() {
         FS.nameTable = new Array(4096);
@@ -2740,6 +3199,7 @@ var tempI64;
         };
       },
   init(input, output, error) {
+        assert(!FS.initialized, 'FS.init was previously called. If you want to initialize later with custom parameters, remove any earlier calls (note that one is automatically added to the generated code)');
         FS.initialized = true;
   
         // Allow Module.stdin etc. to provide defaults, if none explicitly passed to us here
@@ -2752,6 +3212,7 @@ var tempI64;
   quit() {
         FS.initialized = false;
         // force-flush all streams, so we get musl std streams printed out
+        _fflush(0);
         // close all of our streams
         for (var i = 0; i < FS.streams.length; i++) {
           var stream = FS.streams[i];
@@ -3038,6 +3499,7 @@ var tempI64;
           if (position >= contents.length)
             return 0;
           var size = Math.min(contents.length - position, length);
+          assert(size >= 0);
           if (contents.slice) { // normal array
             for (var i = 0; i < size; i++) {
               buffer[offset + i] = contents[position + i];
@@ -3066,6 +3528,24 @@ var tempI64;
         };
         node.stream_ops = stream_ops;
         return node;
+      },
+  absolutePath() {
+        abort('FS.absolutePath has been removed; use PATH_FS.resolve instead');
+      },
+  createFolder() {
+        abort('FS.createFolder has been removed; use FS.mkdir instead');
+      },
+  createLink() {
+        abort('FS.createLink has been removed; use FS.symlink instead');
+      },
+  joinPath() {
+        abort('FS.joinPath has been removed; use PATH.join instead');
+      },
+  mmapAlloc() {
+        abort('FS.mmapAlloc has been replaced by the top level function mmapAlloc');
+      },
+  standardizePath() {
+        abort('FS.standardizePath has been removed; use PATH.normalize instead');
       },
   };
   
@@ -3151,6 +3631,7 @@ var tempI64;
   try {
   
       path = SYSCALLS.getStr(path);
+      assert(flags === 0 || flags == 512);
       path = SYSCALLS.calculateAt(dirfd, path);
       if (amode & ~7) {
         // need a valid mode
@@ -3199,6 +3680,7 @@ var tempI64;
 
   /** @suppress {duplicate } */
   var syscallGetVarargI = () => {
+      assert(SYSCALLS.varargs != undefined);
       // the `+` prepended here is necessary to convince the JSCompiler that varargs is indeed a number.
       var ret = HEAP32[((+SYSCALLS.varargs)>>2)];
       SYSCALLS.varargs += 4;
@@ -3265,6 +3747,8 @@ var tempI64;
   }
 
   var convertI32PairToI53Checked = (lo, hi) => {
+      assert(lo == (lo >>> 0) || lo == (lo|0)); // lo should either be a i32 or a u32
+      assert(hi === (hi|0));                    // hi should be a i32
       return ((hi + 0x200000) >>> 0 < 0x400001 - !!lo) ? (lo >>> 0) + hi * 4294967296 : NaN;
     };
   function ___syscall_ftruncate64(fd,length_low, length_high) {
@@ -3285,6 +3769,7 @@ var tempI64;
 
   
   var stringToUTF8 = (str, outPtr, maxBytesToWrite) => {
+      assert(typeof maxBytesToWrite == 'number', 'stringToUTF8(str, outPtr, maxBytesToWrite) is missing the third parameter that specifies the length of the output buffer!');
       return stringToUTF8Array(str, HEAPU8, outPtr, maxBytesToWrite);
     };
   function ___syscall_getcwd(buf, size) {
@@ -3333,6 +3818,7 @@ var tempI64;
       var nofollow = flags & 256;
       var allowEmpty = flags & 4096;
       flags = flags & (~6400);
+      assert(!flags, `unknown flags in __syscall_newfstatat: ${flags}`);
       path = SYSCALLS.calculateAt(dirfd, path, allowEmpty);
       return SYSCALLS.doStat(nofollow ? FS.lstat : FS.stat, path, buf);
     } catch (e) {
@@ -3429,6 +3915,7 @@ var tempI64;
   try {
   
       path = SYSCALLS.getStr(path);
+      assert(flags === 0);
       path = SYSCALLS.calculateAt(dirfd, path, true);
       var now = Date.now(), atime, mtime;
       if (!times) {
@@ -3468,7 +3955,7 @@ var tempI64;
   }
 
   var __abort_js = () =>
-      abort('');
+      abort('native code called abort()');
 
   var __emscripten_memcpy_js = (dest, src, num) => HEAPU8.copyWithin(dest, src, src + num);
 
@@ -3572,6 +4059,12 @@ var tempI64;
       if (e instanceof ExitStatus || e == 'unwind') {
         return EXITSTATUS;
       }
+      checkStackCookie();
+      if (e instanceof WebAssembly.RuntimeError) {
+        if (_emscripten_stack_get_current() <= 0) {
+          err('Stack overflow detected.  You can try increasing -sSTACK_SIZE (currently set to 524288)');
+        }
+      }
       quit_(1, e);
     };
   
@@ -3585,10 +4078,21 @@ var tempI64;
       }
       quit_(code, new ExitStatus(code));
     };
+  
+  
   /** @suppress {duplicate } */
   /** @param {boolean|number=} implicit */
   var exitJS = (status, implicit) => {
       EXITSTATUS = status;
+  
+      checkUnflushedContent();
+  
+      // if exit() was called explicitly, warn the user if the runtime isn't actually being shut down
+      if (keepRuntimeAlive() && !implicit) {
+        var msg = `program exited (with status: ${status}), but keepRuntimeAlive() is set (counter=${runtimeKeepaliveCounter}) due to an async operation, so halting execution but not exiting the runtime or preventing further async execution (you can use emscripten_force_exit, if you want to force a true shutdown)`;
+        readyPromiseReject(msg);
+        err(msg);
+      }
   
       _proc_exit(status);
     };
@@ -3606,6 +4110,7 @@ var tempI64;
     };
   var callUserCallback = (func) => {
       if (ABORT) {
+        err('user callback triggered after runtime exited or application aborted.  Ignoring.');
         return;
       }
       try {
@@ -3630,6 +4135,7 @@ var tempI64;
       if (!timeout_ms) return 0;
   
       var id = setTimeout(() => {
+        assert(which in timers);
         delete timers[which];
         callUserCallback(() => __emscripten_timeout(which, _emscripten_get_now()));
       }, timeout_ms);
@@ -3637,6 +4143,7 @@ var tempI64;
       return 0;
     };
 
+  
   var __tzset_js = (timezone, daylight, std_name, dst_name) => {
       // TODO: Use (malleable) environment variables instead of system settings.
       var currentYear = new Date().getFullYear();
@@ -3676,6 +4183,10 @@ var tempI64;
   
       var winterName = extractZone(winterOffset);
       var summerName = extractZone(summerOffset);
+      assert(winterName);
+      assert(summerName);
+      assert(lengthBytesUTF8(winterName) <= 16, `timezone name truncated to fit in TZNAME_MAX (${winterName})`);
+      assert(lengthBytesUTF8(summerName) <= 16, `timezone name truncated to fit in TZNAME_MAX (${summerName})`);
       if (summerOffset < winterOffset) {
         // Northern hemisphere
         stringToUTF8(winterName, std_name, 17);
@@ -3688,13 +4199,15 @@ var tempI64;
 
   var _emscripten_date_now = () => Date.now();
 
-
   var getHeapMax = () =>
       // Stay one Wasm page short of 4GB: while e.g. Chrome is able to allocate
       // full 4GB Wasm memories, the size will wrap back to 0 bytes in Wasm side
       // for any code that deals with heap sizes, which would require special
       // casing all heap size related code to treat 0 specially.
       2147483648;
+  var _emscripten_get_heap_max = () => getHeapMax();
+
+
   
   
   var growMemory = (size) => {
@@ -3706,6 +4219,7 @@ var tempI64;
         updateMemoryViews();
         return 1 /*success*/;
       } catch(e) {
+        err(`growMemory: Attempted to grow heap from ${b.byteLength} bytes to ${size} bytes, but got error: ${e}`);
       }
       // implicit 0 return to save code size (caller will cast "undefined" into 0
       // anyhow)
@@ -3716,6 +4230,7 @@ var tempI64;
       requestedSize >>>= 0;
       // With multithreaded builds, races can happen (another thread might increase the size
       // in between), so return a failure, and let the caller retry.
+      assert(requestedSize > oldSize);
   
       // Memory resize rules:
       // 1.  Always increase heap size to at least the requested size, rounded up
@@ -3738,6 +4253,7 @@ var tempI64;
       // (the wasm binary specifies it, so if we tried, we'd fail anyhow).
       var maxHeapSize = getHeapMax();
       if (requestedSize > maxHeapSize) {
+        err(`Cannot enlarge memory, requested ${requestedSize} bytes, but the limit is ${maxHeapSize} bytes!`);
         return false;
       }
   
@@ -3757,6 +4273,7 @@ var tempI64;
           return true;
         }
       }
+      err(`Failed to grow the heap from ${oldSize} bytes to ${newSize} bytes, not enough memory!`);
       return false;
     };
 
@@ -3797,6 +4314,7 @@ var tempI64;
   
   var stringToAscii = (str, buffer) => {
       for (var i = 0; i < str.length; ++i) {
+        assert(str.charCodeAt(i) === (str.charCodeAt(i) & 0xff));
         HEAP8[buffer++] = str.charCodeAt(i);
       }
       // Null-terminate the string
@@ -4109,6 +4627,7 @@ var tempI64;
   
   
   var sigToWasmTypes = (sig) => {
+      assert(!sig.includes('j'), 'i64 not permitted in function signatures when WASM_BIGINT is disabled');
       var typeNames = {
         'i': 'i32',
         'j': 'i64',
@@ -4122,6 +4641,7 @@ var tempI64;
         results: sig[0] == 'v' ? [] : [typeNames[sig[0]]]
       };
       for (var i = 1; i < sig.length; ++i) {
+        assert(sig[i] in typeNames, 'invalid signature char: ' + sig[i]);
         type.parameters.push(typeNames[sig[i]]);
       }
       return type;
@@ -4132,10 +4652,12 @@ var tempI64;
     };
   
   var runtimeKeepalivePop = () => {
+      assert(runtimeKeepaliveCounter > 0);
       runtimeKeepaliveCounter -= 1;
     };
   var Asyncify = {
   instrumentWasmImports(imports) {
+        assert('Suspending' in WebAssembly, 'JSPI not supported by current environment. Perhaps it needs to be enabled via flags?');
         var importPattern = /^(ipp|ipp_async|ippp|ippp_async|vppp|vppp_async|ipppj|ipppj_async|ipppi|ipppi_async|ipppp|ipppp_async|ipppip|ipppip_async|vpppip|vpppip_async|ippppi|ippppi_async|ippppij|ippppij_async|ipppiii|ipppiii_async|ippppip|ippppip_async|ippipppp|ippipppp_async|ipppppip|ipppppip_async|ipppiiip|ipppiiip_async|vppippii|vppippii_async|invoke_.*|__asyncjs__.*)$/;
   
         for (let [x, original] of Object.entries(imports)) {
@@ -4190,6 +4712,7 @@ var tempI64;
   };
 
   var uleb128Encode = (n, target) => {
+      assert(n < 16384);
       if (n < 128) {
         target.push(n);
       } else {
@@ -4214,6 +4737,7 @@ var tempI64;
       target.push(0x60 /* form: func */);
       uleb128Encode(sigParam.length, target);
       for (var i = 0; i < sigParam.length; ++i) {
+        assert(sigParam[i] in typeCodes, 'invalid signature char: ' + sigParam[i]);
         target.push(typeCodes[sigParam[i]]);
       }
   
@@ -4226,6 +4750,8 @@ var tempI64;
       }
     };
   var convertJsFunctionToWasm = (func, sig) => {
+  
+      assert(!sig.includes('j'), 'i64 not permitted in function signatures when WASM_BIGINT is disabled');
   
       // If the type reflection proposal is available, use the new
       // "WebAssembly.Function" constructor.
@@ -4345,6 +4871,7 @@ var tempI64;
   
   /** @param {string=} sig */
   var addFunction = (func, sig) => {
+      assert(typeof func != 'undefined');
       // Check if the function is already in the table, to ensure each function
       // gets a unique index.
       var rtn = getFunctionAddress(func);
@@ -4364,6 +4891,7 @@ var tempI64;
         if (!(err instanceof TypeError)) {
           throw err;
         }
+        assert(typeof sig != 'undefined', 'Missing signature argument to addFunction: ' + func);
         var wrapped = convertJsFunctionToWasm(func, sig);
         setWasmTableEntry(ret, wrapped);
       }
@@ -4375,10 +4903,12 @@ var tempI64;
 
   var getCFunc = (ident) => {
       var func = Module['_' + ident]; // closure exported function
+      assert(func, 'Cannot call unknown function ' + ident + ', make sure it is exported');
       return func;
     };
   
   var writeArrayToMemory = (array, buffer) => {
+      assert(array.length >= 0, 'writeArrayToMemory array must have a length (should be an array or typed array)')
       HEAP8.set(array, buffer);
     };
   
@@ -4430,6 +4960,7 @@ var tempI64;
       var func = getCFunc(ident);
       var cArgs = [];
       var stack = 0;
+      assert(returnType !== 'array', 'Return type should not be "array".');
       if (args) {
         for (var i = 0; i < args.length; i++) {
           var converter = toC[argTypes[i]];
@@ -4462,13 +4993,6 @@ var tempI64;
      * @param {Object=} opts
      */
   var cwrap = (ident, returnType, argTypes, opts) => {
-      // When the function takes numbers and returns a number, we can just return
-      // the original function
-      var numericArgs = !argTypes || argTypes.every((type) => type === 'number' || type === 'boolean');
-      var numericRet = returnType !== 'string';
-      if (numericRet && numericArgs && !opts) {
-        return getCFunc(ident);
-      }
       return (...args) => ccall(ident, returnType, argTypes, args, opts);
     };
 
@@ -4479,6 +5003,8 @@ var tempI64;
 
 
   var stringToUTF16 = (str, outPtr, maxBytesToWrite) => {
+      assert(outPtr % 2 == 0, 'Pointer passed to stringToUTF16 must be aligned to two bytes!');
+      assert(typeof maxBytesToWrite == 'number', 'stringToUTF16(str, outPtr, maxBytesToWrite) is missing the third parameter that specifies the length of the output buffer!');
       // Backwards compatibility: if max bytes is not specified, assume unsafe unbounded write is allowed.
       maxBytesToWrite ??= 0x7FFFFFFF;
       if (maxBytesToWrite < 2) return 0;
@@ -4497,6 +5023,8 @@ var tempI64;
     };
 
   var stringToUTF32 = (str, outPtr, maxBytesToWrite) => {
+      assert(outPtr % 4 == 0, 'Pointer passed to stringToUTF32 must be aligned to four bytes!');
+      assert(typeof maxBytesToWrite == 'number', 'stringToUTF32(str, outPtr, maxBytesToWrite) is missing the third parameter that specifies the length of the output buffer!');
       // Backwards compatibility: if max bytes is not specified, assume unsafe unbounded write is allowed.
       maxBytesToWrite ??= 0x7FFFFFFF;
       if (maxBytesToWrite < 4) return 0;
@@ -4531,6 +5059,7 @@ var tempI64;
 
   var UTF16Decoder = typeof TextDecoder != 'undefined' ? new TextDecoder('utf-16le') : undefined;;
   var UTF16ToString = (ptr, maxBytesToRead) => {
+      assert(ptr % 2 == 0, 'Pointer passed to UTF16ToString must be aligned to two bytes!');
       var endPtr = ptr;
       // TextDecoder needs to know the byte length in advance, it doesn't stop on
       // null terminator by itself.
@@ -4564,6 +5093,7 @@ var tempI64;
     };
 
   var UTF32ToString = (ptr, maxBytesToRead) => {
+      assert(ptr % 4 == 0, 'Pointer passed to UTF32ToString must be aligned to four bytes!');
       var i = 0;
   
       var str = '';
@@ -4591,6 +5121,7 @@ var tempI64;
     for (var i = 0; i < array.length; i++) {
       var chr = array[i];
       if (chr > 0xFF) {
+        assert(false, `Character code ${chr} (${String.fromCharCode(chr)}) at offset ${i} not in 0x00-0xFF.`);
         chr &= 0xFF;
       }
       ret.push(String.fromCharCode(chr));
@@ -4603,14 +5134,10 @@ var tempI64;
   FS.staticInit();
   // Set module methods based on EXPORTED_RUNTIME_METHODS
   ;
-
-      // This error may happen quite a bit. To avoid overhead we reuse it (and
-      // suffer a lack of stack info).
-      MEMFS.doesNotExistError = new FS.ErrnoError(44);
-      /** @suppress {checkTypes} */
-      MEMFS.doesNotExistError.stack = '<generic error, no stack>';
-      ;
 adapters_support();;
+function checkIncomingModuleAPI() {
+  ignoredModuleProp('fetchSettings');
+}
 var wasmImports = {
   /** @export */
   __assert_fail: ___assert_fail,
@@ -4666,6 +5193,8 @@ var wasmImports = {
   _tzset_js: __tzset_js,
   /** @export */
   emscripten_date_now: _emscripten_date_now,
+  /** @export */
+  emscripten_get_heap_max: _emscripten_get_heap_max,
   /** @export */
   emscripten_get_now: _emscripten_get_now,
   /** @export */
@@ -4755,286 +5284,294 @@ var wasmImports = {
 };
 var wasmExports;
 createWasm();
-var ___wasm_call_ctors = () => (___wasm_call_ctors = wasmExports['__wasm_call_ctors'])();
-var _sqlite3_status64 = Module['_sqlite3_status64'] = (a0, a1, a2, a3) => (_sqlite3_status64 = Module['_sqlite3_status64'] = wasmExports['sqlite3_status64'])(a0, a1, a2, a3);
-var _sqlite3_status = Module['_sqlite3_status'] = (a0, a1, a2, a3) => (_sqlite3_status = Module['_sqlite3_status'] = wasmExports['sqlite3_status'])(a0, a1, a2, a3);
-var _sqlite3_db_status = Module['_sqlite3_db_status'] = (a0, a1, a2, a3, a4) => (_sqlite3_db_status = Module['_sqlite3_db_status'] = wasmExports['sqlite3_db_status'])(a0, a1, a2, a3, a4);
-var _sqlite3_msize = Module['_sqlite3_msize'] = (a0) => (_sqlite3_msize = Module['_sqlite3_msize'] = wasmExports['sqlite3_msize'])(a0);
-var _sqlite3_vfs_find = Module['_sqlite3_vfs_find'] = (a0) => (_sqlite3_vfs_find = Module['_sqlite3_vfs_find'] = wasmExports['sqlite3_vfs_find'])(a0);
-var _sqlite3_vfs_register = Module['_sqlite3_vfs_register'] = (a0, a1) => (_sqlite3_vfs_register = Module['_sqlite3_vfs_register'] = wasmExports['sqlite3_vfs_register'])(a0, a1);
-var _sqlite3_vfs_unregister = Module['_sqlite3_vfs_unregister'] = (a0) => (_sqlite3_vfs_unregister = Module['_sqlite3_vfs_unregister'] = wasmExports['sqlite3_vfs_unregister'])(a0);
-var _sqlite3_release_memory = Module['_sqlite3_release_memory'] = (a0) => (_sqlite3_release_memory = Module['_sqlite3_release_memory'] = wasmExports['sqlite3_release_memory'])(a0);
-var _sqlite3_soft_heap_limit64 = Module['_sqlite3_soft_heap_limit64'] = (a0, a1) => (_sqlite3_soft_heap_limit64 = Module['_sqlite3_soft_heap_limit64'] = wasmExports['sqlite3_soft_heap_limit64'])(a0, a1);
-var _sqlite3_memory_used = Module['_sqlite3_memory_used'] = () => (_sqlite3_memory_used = Module['_sqlite3_memory_used'] = wasmExports['sqlite3_memory_used'])();
-var _sqlite3_hard_heap_limit64 = Module['_sqlite3_hard_heap_limit64'] = (a0, a1) => (_sqlite3_hard_heap_limit64 = Module['_sqlite3_hard_heap_limit64'] = wasmExports['sqlite3_hard_heap_limit64'])(a0, a1);
-var _sqlite3_memory_highwater = Module['_sqlite3_memory_highwater'] = (a0) => (_sqlite3_memory_highwater = Module['_sqlite3_memory_highwater'] = wasmExports['sqlite3_memory_highwater'])(a0);
-var _sqlite3_malloc = Module['_sqlite3_malloc'] = (a0) => (_sqlite3_malloc = Module['_sqlite3_malloc'] = wasmExports['sqlite3_malloc'])(a0);
-var _sqlite3_malloc64 = Module['_sqlite3_malloc64'] = (a0, a1) => (_sqlite3_malloc64 = Module['_sqlite3_malloc64'] = wasmExports['sqlite3_malloc64'])(a0, a1);
-var _sqlite3_free = Module['_sqlite3_free'] = (a0) => (_sqlite3_free = Module['_sqlite3_free'] = wasmExports['sqlite3_free'])(a0);
-var _sqlite3_realloc = Module['_sqlite3_realloc'] = (a0, a1) => (_sqlite3_realloc = Module['_sqlite3_realloc'] = wasmExports['sqlite3_realloc'])(a0, a1);
-var _sqlite3_realloc64 = Module['_sqlite3_realloc64'] = (a0, a1, a2) => (_sqlite3_realloc64 = Module['_sqlite3_realloc64'] = wasmExports['sqlite3_realloc64'])(a0, a1, a2);
-var _sqlite3_str_vappendf = Module['_sqlite3_str_vappendf'] = (a0, a1, a2) => (_sqlite3_str_vappendf = Module['_sqlite3_str_vappendf'] = wasmExports['sqlite3_str_vappendf'])(a0, a1, a2);
-var _sqlite3_str_append = Module['_sqlite3_str_append'] = (a0, a1, a2) => (_sqlite3_str_append = Module['_sqlite3_str_append'] = wasmExports['sqlite3_str_append'])(a0, a1, a2);
-var _sqlite3_str_appendchar = Module['_sqlite3_str_appendchar'] = (a0, a1, a2) => (_sqlite3_str_appendchar = Module['_sqlite3_str_appendchar'] = wasmExports['sqlite3_str_appendchar'])(a0, a1, a2);
-var _sqlite3_str_appendall = Module['_sqlite3_str_appendall'] = (a0, a1) => (_sqlite3_str_appendall = Module['_sqlite3_str_appendall'] = wasmExports['sqlite3_str_appendall'])(a0, a1);
-var _sqlite3_str_appendf = Module['_sqlite3_str_appendf'] = (a0, a1, a2) => (_sqlite3_str_appendf = Module['_sqlite3_str_appendf'] = wasmExports['sqlite3_str_appendf'])(a0, a1, a2);
-var _sqlite3_str_finish = Module['_sqlite3_str_finish'] = (a0) => (_sqlite3_str_finish = Module['_sqlite3_str_finish'] = wasmExports['sqlite3_str_finish'])(a0);
-var _sqlite3_str_errcode = Module['_sqlite3_str_errcode'] = (a0) => (_sqlite3_str_errcode = Module['_sqlite3_str_errcode'] = wasmExports['sqlite3_str_errcode'])(a0);
-var _sqlite3_str_length = Module['_sqlite3_str_length'] = (a0) => (_sqlite3_str_length = Module['_sqlite3_str_length'] = wasmExports['sqlite3_str_length'])(a0);
-var _sqlite3_str_value = Module['_sqlite3_str_value'] = (a0) => (_sqlite3_str_value = Module['_sqlite3_str_value'] = wasmExports['sqlite3_str_value'])(a0);
-var _sqlite3_str_reset = Module['_sqlite3_str_reset'] = (a0) => (_sqlite3_str_reset = Module['_sqlite3_str_reset'] = wasmExports['sqlite3_str_reset'])(a0);
-var _sqlite3_str_new = Module['_sqlite3_str_new'] = (a0) => (_sqlite3_str_new = Module['_sqlite3_str_new'] = wasmExports['sqlite3_str_new'])(a0);
-var _sqlite3_vmprintf = Module['_sqlite3_vmprintf'] = (a0, a1) => (_sqlite3_vmprintf = Module['_sqlite3_vmprintf'] = wasmExports['sqlite3_vmprintf'])(a0, a1);
-var _sqlite3_mprintf = Module['_sqlite3_mprintf'] = (a0, a1) => (_sqlite3_mprintf = Module['_sqlite3_mprintf'] = wasmExports['sqlite3_mprintf'])(a0, a1);
-var _sqlite3_vsnprintf = Module['_sqlite3_vsnprintf'] = (a0, a1, a2, a3) => (_sqlite3_vsnprintf = Module['_sqlite3_vsnprintf'] = wasmExports['sqlite3_vsnprintf'])(a0, a1, a2, a3);
-var _sqlite3_snprintf = Module['_sqlite3_snprintf'] = (a0, a1, a2, a3) => (_sqlite3_snprintf = Module['_sqlite3_snprintf'] = wasmExports['sqlite3_snprintf'])(a0, a1, a2, a3);
-var _sqlite3_log = Module['_sqlite3_log'] = (a0, a1, a2) => (_sqlite3_log = Module['_sqlite3_log'] = wasmExports['sqlite3_log'])(a0, a1, a2);
-var _sqlite3_randomness = Module['_sqlite3_randomness'] = (a0, a1) => (_sqlite3_randomness = Module['_sqlite3_randomness'] = wasmExports['sqlite3_randomness'])(a0, a1);
-var _sqlite3_stricmp = Module['_sqlite3_stricmp'] = (a0, a1) => (_sqlite3_stricmp = Module['_sqlite3_stricmp'] = wasmExports['sqlite3_stricmp'])(a0, a1);
-var _sqlite3_strnicmp = Module['_sqlite3_strnicmp'] = (a0, a1, a2) => (_sqlite3_strnicmp = Module['_sqlite3_strnicmp'] = wasmExports['sqlite3_strnicmp'])(a0, a1, a2);
-var _sqlite3_os_init = Module['_sqlite3_os_init'] = () => (_sqlite3_os_init = Module['_sqlite3_os_init'] = wasmExports['sqlite3_os_init'])();
-var _sqlite3_os_end = Module['_sqlite3_os_end'] = () => (_sqlite3_os_end = Module['_sqlite3_os_end'] = wasmExports['sqlite3_os_end'])();
-var _sqlite3_serialize = Module['_sqlite3_serialize'] = (a0, a1, a2, a3) => (_sqlite3_serialize = Module['_sqlite3_serialize'] = wasmExports['sqlite3_serialize'])(a0, a1, a2, a3);
-var _sqlite3_prepare_v2 = Module['_sqlite3_prepare_v2'] = (a0, a1, a2, a3, a4) => (_sqlite3_prepare_v2 = Module['_sqlite3_prepare_v2'] = wasmExports['sqlite3_prepare_v2'])(a0, a1, a2, a3, a4);
-var _sqlite3_step = Module['_sqlite3_step'] = (a0) => (_sqlite3_step = Module['_sqlite3_step'] = wasmExports['sqlite3_step'])(a0);
-var _sqlite3_column_int64 = Module['_sqlite3_column_int64'] = (a0, a1) => (_sqlite3_column_int64 = Module['_sqlite3_column_int64'] = wasmExports['sqlite3_column_int64'])(a0, a1);
-var _sqlite3_reset = Module['_sqlite3_reset'] = (a0) => (_sqlite3_reset = Module['_sqlite3_reset'] = wasmExports['sqlite3_reset'])(a0);
-var _sqlite3_exec = Module['_sqlite3_exec'] = (a0, a1, a2, a3, a4) => (_sqlite3_exec = Module['_sqlite3_exec'] = wasmExports['sqlite3_exec'])(a0, a1, a2, a3, a4);
-var _sqlite3_column_int = Module['_sqlite3_column_int'] = (a0, a1) => (_sqlite3_column_int = Module['_sqlite3_column_int'] = wasmExports['sqlite3_column_int'])(a0, a1);
-var _sqlite3_finalize = Module['_sqlite3_finalize'] = (a0) => (_sqlite3_finalize = Module['_sqlite3_finalize'] = wasmExports['sqlite3_finalize'])(a0);
-var _sqlite3_deserialize = Module['_sqlite3_deserialize'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (_sqlite3_deserialize = Module['_sqlite3_deserialize'] = wasmExports['sqlite3_deserialize'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var _sqlite3_database_file_object = Module['_sqlite3_database_file_object'] = (a0) => (_sqlite3_database_file_object = Module['_sqlite3_database_file_object'] = wasmExports['sqlite3_database_file_object'])(a0);
-var _sqlite3_backup_init = Module['_sqlite3_backup_init'] = (a0, a1, a2, a3) => (_sqlite3_backup_init = Module['_sqlite3_backup_init'] = wasmExports['sqlite3_backup_init'])(a0, a1, a2, a3);
-var _sqlite3_backup_step = Module['_sqlite3_backup_step'] = (a0, a1) => (_sqlite3_backup_step = Module['_sqlite3_backup_step'] = wasmExports['sqlite3_backup_step'])(a0, a1);
-var _sqlite3_backup_finish = Module['_sqlite3_backup_finish'] = (a0) => (_sqlite3_backup_finish = Module['_sqlite3_backup_finish'] = wasmExports['sqlite3_backup_finish'])(a0);
-var _sqlite3_backup_remaining = Module['_sqlite3_backup_remaining'] = (a0) => (_sqlite3_backup_remaining = Module['_sqlite3_backup_remaining'] = wasmExports['sqlite3_backup_remaining'])(a0);
-var _sqlite3_backup_pagecount = Module['_sqlite3_backup_pagecount'] = (a0) => (_sqlite3_backup_pagecount = Module['_sqlite3_backup_pagecount'] = wasmExports['sqlite3_backup_pagecount'])(a0);
-var _sqlite3_clear_bindings = Module['_sqlite3_clear_bindings'] = (a0) => (_sqlite3_clear_bindings = Module['_sqlite3_clear_bindings'] = wasmExports['sqlite3_clear_bindings'])(a0);
-var _sqlite3_value_blob = Module['_sqlite3_value_blob'] = (a0) => (_sqlite3_value_blob = Module['_sqlite3_value_blob'] = wasmExports['sqlite3_value_blob'])(a0);
-var _sqlite3_value_text = Module['_sqlite3_value_text'] = (a0) => (_sqlite3_value_text = Module['_sqlite3_value_text'] = wasmExports['sqlite3_value_text'])(a0);
-var _sqlite3_value_bytes = Module['_sqlite3_value_bytes'] = (a0) => (_sqlite3_value_bytes = Module['_sqlite3_value_bytes'] = wasmExports['sqlite3_value_bytes'])(a0);
-var _sqlite3_value_bytes16 = Module['_sqlite3_value_bytes16'] = (a0) => (_sqlite3_value_bytes16 = Module['_sqlite3_value_bytes16'] = wasmExports['sqlite3_value_bytes16'])(a0);
-var _sqlite3_value_double = Module['_sqlite3_value_double'] = (a0) => (_sqlite3_value_double = Module['_sqlite3_value_double'] = wasmExports['sqlite3_value_double'])(a0);
-var _sqlite3_value_int = Module['_sqlite3_value_int'] = (a0) => (_sqlite3_value_int = Module['_sqlite3_value_int'] = wasmExports['sqlite3_value_int'])(a0);
-var _sqlite3_value_int64 = Module['_sqlite3_value_int64'] = (a0) => (_sqlite3_value_int64 = Module['_sqlite3_value_int64'] = wasmExports['sqlite3_value_int64'])(a0);
-var _sqlite3_value_subtype = Module['_sqlite3_value_subtype'] = (a0) => (_sqlite3_value_subtype = Module['_sqlite3_value_subtype'] = wasmExports['sqlite3_value_subtype'])(a0);
-var _sqlite3_value_pointer = Module['_sqlite3_value_pointer'] = (a0, a1) => (_sqlite3_value_pointer = Module['_sqlite3_value_pointer'] = wasmExports['sqlite3_value_pointer'])(a0, a1);
-var _sqlite3_value_text16 = Module['_sqlite3_value_text16'] = (a0) => (_sqlite3_value_text16 = Module['_sqlite3_value_text16'] = wasmExports['sqlite3_value_text16'])(a0);
-var _sqlite3_value_text16be = Module['_sqlite3_value_text16be'] = (a0) => (_sqlite3_value_text16be = Module['_sqlite3_value_text16be'] = wasmExports['sqlite3_value_text16be'])(a0);
-var _sqlite3_value_text16le = Module['_sqlite3_value_text16le'] = (a0) => (_sqlite3_value_text16le = Module['_sqlite3_value_text16le'] = wasmExports['sqlite3_value_text16le'])(a0);
-var _sqlite3_value_type = Module['_sqlite3_value_type'] = (a0) => (_sqlite3_value_type = Module['_sqlite3_value_type'] = wasmExports['sqlite3_value_type'])(a0);
-var _sqlite3_value_encoding = Module['_sqlite3_value_encoding'] = (a0) => (_sqlite3_value_encoding = Module['_sqlite3_value_encoding'] = wasmExports['sqlite3_value_encoding'])(a0);
-var _sqlite3_value_nochange = Module['_sqlite3_value_nochange'] = (a0) => (_sqlite3_value_nochange = Module['_sqlite3_value_nochange'] = wasmExports['sqlite3_value_nochange'])(a0);
-var _sqlite3_value_frombind = Module['_sqlite3_value_frombind'] = (a0) => (_sqlite3_value_frombind = Module['_sqlite3_value_frombind'] = wasmExports['sqlite3_value_frombind'])(a0);
-var _sqlite3_value_dup = Module['_sqlite3_value_dup'] = (a0) => (_sqlite3_value_dup = Module['_sqlite3_value_dup'] = wasmExports['sqlite3_value_dup'])(a0);
-var _sqlite3_value_free = Module['_sqlite3_value_free'] = (a0) => (_sqlite3_value_free = Module['_sqlite3_value_free'] = wasmExports['sqlite3_value_free'])(a0);
-var _sqlite3_result_blob = Module['_sqlite3_result_blob'] = (a0, a1, a2, a3) => (_sqlite3_result_blob = Module['_sqlite3_result_blob'] = wasmExports['sqlite3_result_blob'])(a0, a1, a2, a3);
-var _sqlite3_result_blob64 = Module['_sqlite3_result_blob64'] = (a0, a1, a2, a3, a4) => (_sqlite3_result_blob64 = Module['_sqlite3_result_blob64'] = wasmExports['sqlite3_result_blob64'])(a0, a1, a2, a3, a4);
-var _sqlite3_result_double = Module['_sqlite3_result_double'] = (a0, a1) => (_sqlite3_result_double = Module['_sqlite3_result_double'] = wasmExports['sqlite3_result_double'])(a0, a1);
-var _sqlite3_result_error = Module['_sqlite3_result_error'] = (a0, a1, a2) => (_sqlite3_result_error = Module['_sqlite3_result_error'] = wasmExports['sqlite3_result_error'])(a0, a1, a2);
-var _sqlite3_result_error16 = Module['_sqlite3_result_error16'] = (a0, a1, a2) => (_sqlite3_result_error16 = Module['_sqlite3_result_error16'] = wasmExports['sqlite3_result_error16'])(a0, a1, a2);
-var _sqlite3_result_int = Module['_sqlite3_result_int'] = (a0, a1) => (_sqlite3_result_int = Module['_sqlite3_result_int'] = wasmExports['sqlite3_result_int'])(a0, a1);
-var _sqlite3_result_int64 = Module['_sqlite3_result_int64'] = (a0, a1, a2) => (_sqlite3_result_int64 = Module['_sqlite3_result_int64'] = wasmExports['sqlite3_result_int64'])(a0, a1, a2);
-var _sqlite3_result_null = Module['_sqlite3_result_null'] = (a0) => (_sqlite3_result_null = Module['_sqlite3_result_null'] = wasmExports['sqlite3_result_null'])(a0);
-var _sqlite3_result_pointer = Module['_sqlite3_result_pointer'] = (a0, a1, a2, a3) => (_sqlite3_result_pointer = Module['_sqlite3_result_pointer'] = wasmExports['sqlite3_result_pointer'])(a0, a1, a2, a3);
-var _sqlite3_result_subtype = Module['_sqlite3_result_subtype'] = (a0, a1) => (_sqlite3_result_subtype = Module['_sqlite3_result_subtype'] = wasmExports['sqlite3_result_subtype'])(a0, a1);
-var _sqlite3_result_text = Module['_sqlite3_result_text'] = (a0, a1, a2, a3) => (_sqlite3_result_text = Module['_sqlite3_result_text'] = wasmExports['sqlite3_result_text'])(a0, a1, a2, a3);
-var _sqlite3_result_text64 = Module['_sqlite3_result_text64'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_result_text64 = Module['_sqlite3_result_text64'] = wasmExports['sqlite3_result_text64'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_result_text16 = Module['_sqlite3_result_text16'] = (a0, a1, a2, a3) => (_sqlite3_result_text16 = Module['_sqlite3_result_text16'] = wasmExports['sqlite3_result_text16'])(a0, a1, a2, a3);
-var _sqlite3_result_text16be = Module['_sqlite3_result_text16be'] = (a0, a1, a2, a3) => (_sqlite3_result_text16be = Module['_sqlite3_result_text16be'] = wasmExports['sqlite3_result_text16be'])(a0, a1, a2, a3);
-var _sqlite3_result_text16le = Module['_sqlite3_result_text16le'] = (a0, a1, a2, a3) => (_sqlite3_result_text16le = Module['_sqlite3_result_text16le'] = wasmExports['sqlite3_result_text16le'])(a0, a1, a2, a3);
-var _sqlite3_result_value = Module['_sqlite3_result_value'] = (a0, a1) => (_sqlite3_result_value = Module['_sqlite3_result_value'] = wasmExports['sqlite3_result_value'])(a0, a1);
-var _sqlite3_result_error_toobig = Module['_sqlite3_result_error_toobig'] = (a0) => (_sqlite3_result_error_toobig = Module['_sqlite3_result_error_toobig'] = wasmExports['sqlite3_result_error_toobig'])(a0);
-var _sqlite3_result_zeroblob = Module['_sqlite3_result_zeroblob'] = (a0, a1) => (_sqlite3_result_zeroblob = Module['_sqlite3_result_zeroblob'] = wasmExports['sqlite3_result_zeroblob'])(a0, a1);
-var _sqlite3_result_zeroblob64 = Module['_sqlite3_result_zeroblob64'] = (a0, a1, a2) => (_sqlite3_result_zeroblob64 = Module['_sqlite3_result_zeroblob64'] = wasmExports['sqlite3_result_zeroblob64'])(a0, a1, a2);
-var _sqlite3_result_error_code = Module['_sqlite3_result_error_code'] = (a0, a1) => (_sqlite3_result_error_code = Module['_sqlite3_result_error_code'] = wasmExports['sqlite3_result_error_code'])(a0, a1);
-var _sqlite3_result_error_nomem = Module['_sqlite3_result_error_nomem'] = (a0) => (_sqlite3_result_error_nomem = Module['_sqlite3_result_error_nomem'] = wasmExports['sqlite3_result_error_nomem'])(a0);
-var _sqlite3_user_data = Module['_sqlite3_user_data'] = (a0) => (_sqlite3_user_data = Module['_sqlite3_user_data'] = wasmExports['sqlite3_user_data'])(a0);
-var _sqlite3_context_db_handle = Module['_sqlite3_context_db_handle'] = (a0) => (_sqlite3_context_db_handle = Module['_sqlite3_context_db_handle'] = wasmExports['sqlite3_context_db_handle'])(a0);
-var _sqlite3_vtab_nochange = Module['_sqlite3_vtab_nochange'] = (a0) => (_sqlite3_vtab_nochange = Module['_sqlite3_vtab_nochange'] = wasmExports['sqlite3_vtab_nochange'])(a0);
-var _sqlite3_vtab_in_first = Module['_sqlite3_vtab_in_first'] = (a0, a1) => (_sqlite3_vtab_in_first = Module['_sqlite3_vtab_in_first'] = wasmExports['sqlite3_vtab_in_first'])(a0, a1);
-var _sqlite3_vtab_in_next = Module['_sqlite3_vtab_in_next'] = (a0, a1) => (_sqlite3_vtab_in_next = Module['_sqlite3_vtab_in_next'] = wasmExports['sqlite3_vtab_in_next'])(a0, a1);
-var _sqlite3_aggregate_context = Module['_sqlite3_aggregate_context'] = (a0, a1) => (_sqlite3_aggregate_context = Module['_sqlite3_aggregate_context'] = wasmExports['sqlite3_aggregate_context'])(a0, a1);
-var _sqlite3_get_auxdata = Module['_sqlite3_get_auxdata'] = (a0, a1) => (_sqlite3_get_auxdata = Module['_sqlite3_get_auxdata'] = wasmExports['sqlite3_get_auxdata'])(a0, a1);
-var _sqlite3_set_auxdata = Module['_sqlite3_set_auxdata'] = (a0, a1, a2, a3) => (_sqlite3_set_auxdata = Module['_sqlite3_set_auxdata'] = wasmExports['sqlite3_set_auxdata'])(a0, a1, a2, a3);
-var _sqlite3_column_count = Module['_sqlite3_column_count'] = (a0) => (_sqlite3_column_count = Module['_sqlite3_column_count'] = wasmExports['sqlite3_column_count'])(a0);
-var _sqlite3_data_count = Module['_sqlite3_data_count'] = (a0) => (_sqlite3_data_count = Module['_sqlite3_data_count'] = wasmExports['sqlite3_data_count'])(a0);
-var _sqlite3_column_blob = Module['_sqlite3_column_blob'] = (a0, a1) => (_sqlite3_column_blob = Module['_sqlite3_column_blob'] = wasmExports['sqlite3_column_blob'])(a0, a1);
-var _sqlite3_column_bytes = Module['_sqlite3_column_bytes'] = (a0, a1) => (_sqlite3_column_bytes = Module['_sqlite3_column_bytes'] = wasmExports['sqlite3_column_bytes'])(a0, a1);
-var _sqlite3_column_bytes16 = Module['_sqlite3_column_bytes16'] = (a0, a1) => (_sqlite3_column_bytes16 = Module['_sqlite3_column_bytes16'] = wasmExports['sqlite3_column_bytes16'])(a0, a1);
-var _sqlite3_column_double = Module['_sqlite3_column_double'] = (a0, a1) => (_sqlite3_column_double = Module['_sqlite3_column_double'] = wasmExports['sqlite3_column_double'])(a0, a1);
-var _sqlite3_column_text = Module['_sqlite3_column_text'] = (a0, a1) => (_sqlite3_column_text = Module['_sqlite3_column_text'] = wasmExports['sqlite3_column_text'])(a0, a1);
-var _sqlite3_column_value = Module['_sqlite3_column_value'] = (a0, a1) => (_sqlite3_column_value = Module['_sqlite3_column_value'] = wasmExports['sqlite3_column_value'])(a0, a1);
-var _sqlite3_column_text16 = Module['_sqlite3_column_text16'] = (a0, a1) => (_sqlite3_column_text16 = Module['_sqlite3_column_text16'] = wasmExports['sqlite3_column_text16'])(a0, a1);
-var _sqlite3_column_type = Module['_sqlite3_column_type'] = (a0, a1) => (_sqlite3_column_type = Module['_sqlite3_column_type'] = wasmExports['sqlite3_column_type'])(a0, a1);
-var _sqlite3_column_name = Module['_sqlite3_column_name'] = (a0, a1) => (_sqlite3_column_name = Module['_sqlite3_column_name'] = wasmExports['sqlite3_column_name'])(a0, a1);
-var _sqlite3_column_name16 = Module['_sqlite3_column_name16'] = (a0, a1) => (_sqlite3_column_name16 = Module['_sqlite3_column_name16'] = wasmExports['sqlite3_column_name16'])(a0, a1);
-var _sqlite3_bind_blob = Module['_sqlite3_bind_blob'] = (a0, a1, a2, a3, a4) => (_sqlite3_bind_blob = Module['_sqlite3_bind_blob'] = wasmExports['sqlite3_bind_blob'])(a0, a1, a2, a3, a4);
-var _sqlite3_bind_blob64 = Module['_sqlite3_bind_blob64'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_bind_blob64 = Module['_sqlite3_bind_blob64'] = wasmExports['sqlite3_bind_blob64'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_bind_double = Module['_sqlite3_bind_double'] = (a0, a1, a2) => (_sqlite3_bind_double = Module['_sqlite3_bind_double'] = wasmExports['sqlite3_bind_double'])(a0, a1, a2);
-var _sqlite3_bind_int = Module['_sqlite3_bind_int'] = (a0, a1, a2) => (_sqlite3_bind_int = Module['_sqlite3_bind_int'] = wasmExports['sqlite3_bind_int'])(a0, a1, a2);
-var _sqlite3_bind_int64 = Module['_sqlite3_bind_int64'] = (a0, a1, a2, a3) => (_sqlite3_bind_int64 = Module['_sqlite3_bind_int64'] = wasmExports['sqlite3_bind_int64'])(a0, a1, a2, a3);
-var _sqlite3_bind_null = Module['_sqlite3_bind_null'] = (a0, a1) => (_sqlite3_bind_null = Module['_sqlite3_bind_null'] = wasmExports['sqlite3_bind_null'])(a0, a1);
-var _sqlite3_bind_pointer = Module['_sqlite3_bind_pointer'] = (a0, a1, a2, a3, a4) => (_sqlite3_bind_pointer = Module['_sqlite3_bind_pointer'] = wasmExports['sqlite3_bind_pointer'])(a0, a1, a2, a3, a4);
-var _sqlite3_bind_text = Module['_sqlite3_bind_text'] = (a0, a1, a2, a3, a4) => (_sqlite3_bind_text = Module['_sqlite3_bind_text'] = wasmExports['sqlite3_bind_text'])(a0, a1, a2, a3, a4);
-var _sqlite3_bind_text64 = Module['_sqlite3_bind_text64'] = (a0, a1, a2, a3, a4, a5, a6) => (_sqlite3_bind_text64 = Module['_sqlite3_bind_text64'] = wasmExports['sqlite3_bind_text64'])(a0, a1, a2, a3, a4, a5, a6);
-var _sqlite3_bind_text16 = Module['_sqlite3_bind_text16'] = (a0, a1, a2, a3, a4) => (_sqlite3_bind_text16 = Module['_sqlite3_bind_text16'] = wasmExports['sqlite3_bind_text16'])(a0, a1, a2, a3, a4);
-var _sqlite3_bind_value = Module['_sqlite3_bind_value'] = (a0, a1, a2) => (_sqlite3_bind_value = Module['_sqlite3_bind_value'] = wasmExports['sqlite3_bind_value'])(a0, a1, a2);
-var _sqlite3_bind_zeroblob = Module['_sqlite3_bind_zeroblob'] = (a0, a1, a2) => (_sqlite3_bind_zeroblob = Module['_sqlite3_bind_zeroblob'] = wasmExports['sqlite3_bind_zeroblob'])(a0, a1, a2);
-var _sqlite3_bind_zeroblob64 = Module['_sqlite3_bind_zeroblob64'] = (a0, a1, a2, a3) => (_sqlite3_bind_zeroblob64 = Module['_sqlite3_bind_zeroblob64'] = wasmExports['sqlite3_bind_zeroblob64'])(a0, a1, a2, a3);
-var _sqlite3_bind_parameter_count = Module['_sqlite3_bind_parameter_count'] = (a0) => (_sqlite3_bind_parameter_count = Module['_sqlite3_bind_parameter_count'] = wasmExports['sqlite3_bind_parameter_count'])(a0);
-var _sqlite3_bind_parameter_name = Module['_sqlite3_bind_parameter_name'] = (a0, a1) => (_sqlite3_bind_parameter_name = Module['_sqlite3_bind_parameter_name'] = wasmExports['sqlite3_bind_parameter_name'])(a0, a1);
-var _sqlite3_bind_parameter_index = Module['_sqlite3_bind_parameter_index'] = (a0, a1) => (_sqlite3_bind_parameter_index = Module['_sqlite3_bind_parameter_index'] = wasmExports['sqlite3_bind_parameter_index'])(a0, a1);
-var _sqlite3_db_handle = Module['_sqlite3_db_handle'] = (a0) => (_sqlite3_db_handle = Module['_sqlite3_db_handle'] = wasmExports['sqlite3_db_handle'])(a0);
-var _sqlite3_stmt_readonly = Module['_sqlite3_stmt_readonly'] = (a0) => (_sqlite3_stmt_readonly = Module['_sqlite3_stmt_readonly'] = wasmExports['sqlite3_stmt_readonly'])(a0);
-var _sqlite3_stmt_isexplain = Module['_sqlite3_stmt_isexplain'] = (a0) => (_sqlite3_stmt_isexplain = Module['_sqlite3_stmt_isexplain'] = wasmExports['sqlite3_stmt_isexplain'])(a0);
-var _sqlite3_stmt_explain = Module['_sqlite3_stmt_explain'] = (a0, a1) => (_sqlite3_stmt_explain = Module['_sqlite3_stmt_explain'] = wasmExports['sqlite3_stmt_explain'])(a0, a1);
-var _sqlite3_stmt_busy = Module['_sqlite3_stmt_busy'] = (a0) => (_sqlite3_stmt_busy = Module['_sqlite3_stmt_busy'] = wasmExports['sqlite3_stmt_busy'])(a0);
-var _sqlite3_next_stmt = Module['_sqlite3_next_stmt'] = (a0, a1) => (_sqlite3_next_stmt = Module['_sqlite3_next_stmt'] = wasmExports['sqlite3_next_stmt'])(a0, a1);
-var _sqlite3_stmt_status = Module['_sqlite3_stmt_status'] = (a0, a1, a2) => (_sqlite3_stmt_status = Module['_sqlite3_stmt_status'] = wasmExports['sqlite3_stmt_status'])(a0, a1, a2);
-var _sqlite3_sql = Module['_sqlite3_sql'] = (a0) => (_sqlite3_sql = Module['_sqlite3_sql'] = wasmExports['sqlite3_sql'])(a0);
-var _sqlite3_expanded_sql = Module['_sqlite3_expanded_sql'] = (a0) => (_sqlite3_expanded_sql = Module['_sqlite3_expanded_sql'] = wasmExports['sqlite3_expanded_sql'])(a0);
-var _sqlite3_value_numeric_type = Module['_sqlite3_value_numeric_type'] = (a0) => (_sqlite3_value_numeric_type = Module['_sqlite3_value_numeric_type'] = wasmExports['sqlite3_value_numeric_type'])(a0);
-var _sqlite3_blob_open = Module['_sqlite3_blob_open'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (_sqlite3_blob_open = Module['_sqlite3_blob_open'] = wasmExports['sqlite3_blob_open'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var _sqlite3_blob_close = Module['_sqlite3_blob_close'] = (a0) => (_sqlite3_blob_close = Module['_sqlite3_blob_close'] = wasmExports['sqlite3_blob_close'])(a0);
-var _sqlite3_blob_read = Module['_sqlite3_blob_read'] = (a0, a1, a2, a3) => (_sqlite3_blob_read = Module['_sqlite3_blob_read'] = wasmExports['sqlite3_blob_read'])(a0, a1, a2, a3);
-var _sqlite3_blob_write = Module['_sqlite3_blob_write'] = (a0, a1, a2, a3) => (_sqlite3_blob_write = Module['_sqlite3_blob_write'] = wasmExports['sqlite3_blob_write'])(a0, a1, a2, a3);
-var _sqlite3_blob_bytes = Module['_sqlite3_blob_bytes'] = (a0) => (_sqlite3_blob_bytes = Module['_sqlite3_blob_bytes'] = wasmExports['sqlite3_blob_bytes'])(a0);
-var _sqlite3_blob_reopen = Module['_sqlite3_blob_reopen'] = (a0, a1, a2) => (_sqlite3_blob_reopen = Module['_sqlite3_blob_reopen'] = wasmExports['sqlite3_blob_reopen'])(a0, a1, a2);
-var _sqlite3_set_authorizer = Module['_sqlite3_set_authorizer'] = (a0, a1, a2) => (_sqlite3_set_authorizer = Module['_sqlite3_set_authorizer'] = wasmExports['sqlite3_set_authorizer'])(a0, a1, a2);
-var _sqlite3_strglob = Module['_sqlite3_strglob'] = (a0, a1) => (_sqlite3_strglob = Module['_sqlite3_strglob'] = wasmExports['sqlite3_strglob'])(a0, a1);
-var _sqlite3_strlike = Module['_sqlite3_strlike'] = (a0, a1, a2) => (_sqlite3_strlike = Module['_sqlite3_strlike'] = wasmExports['sqlite3_strlike'])(a0, a1, a2);
-var _sqlite3_errmsg = Module['_sqlite3_errmsg'] = (a0) => (_sqlite3_errmsg = Module['_sqlite3_errmsg'] = wasmExports['sqlite3_errmsg'])(a0);
-var _sqlite3_auto_extension = Module['_sqlite3_auto_extension'] = (a0) => (_sqlite3_auto_extension = Module['_sqlite3_auto_extension'] = wasmExports['sqlite3_auto_extension'])(a0);
-var _sqlite3_cancel_auto_extension = Module['_sqlite3_cancel_auto_extension'] = (a0) => (_sqlite3_cancel_auto_extension = Module['_sqlite3_cancel_auto_extension'] = wasmExports['sqlite3_cancel_auto_extension'])(a0);
-var _sqlite3_reset_auto_extension = Module['_sqlite3_reset_auto_extension'] = () => (_sqlite3_reset_auto_extension = Module['_sqlite3_reset_auto_extension'] = wasmExports['sqlite3_reset_auto_extension'])();
-var _sqlite3_prepare = Module['_sqlite3_prepare'] = (a0, a1, a2, a3, a4) => (_sqlite3_prepare = Module['_sqlite3_prepare'] = wasmExports['sqlite3_prepare'])(a0, a1, a2, a3, a4);
-var _sqlite3_prepare_v3 = Module['_sqlite3_prepare_v3'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_prepare_v3 = Module['_sqlite3_prepare_v3'] = wasmExports['sqlite3_prepare_v3'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_prepare16 = Module['_sqlite3_prepare16'] = (a0, a1, a2, a3, a4) => (_sqlite3_prepare16 = Module['_sqlite3_prepare16'] = wasmExports['sqlite3_prepare16'])(a0, a1, a2, a3, a4);
-var _sqlite3_prepare16_v2 = Module['_sqlite3_prepare16_v2'] = (a0, a1, a2, a3, a4) => (_sqlite3_prepare16_v2 = Module['_sqlite3_prepare16_v2'] = wasmExports['sqlite3_prepare16_v2'])(a0, a1, a2, a3, a4);
-var _sqlite3_prepare16_v3 = Module['_sqlite3_prepare16_v3'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_prepare16_v3 = Module['_sqlite3_prepare16_v3'] = wasmExports['sqlite3_prepare16_v3'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_get_table = Module['_sqlite3_get_table'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_get_table = Module['_sqlite3_get_table'] = wasmExports['sqlite3_get_table'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_free_table = Module['_sqlite3_free_table'] = (a0) => (_sqlite3_free_table = Module['_sqlite3_free_table'] = wasmExports['sqlite3_free_table'])(a0);
-var _sqlite3_create_module = Module['_sqlite3_create_module'] = (a0, a1, a2, a3) => (_sqlite3_create_module = Module['_sqlite3_create_module'] = wasmExports['sqlite3_create_module'])(a0, a1, a2, a3);
-var _sqlite3_create_module_v2 = Module['_sqlite3_create_module_v2'] = (a0, a1, a2, a3, a4) => (_sqlite3_create_module_v2 = Module['_sqlite3_create_module_v2'] = wasmExports['sqlite3_create_module_v2'])(a0, a1, a2, a3, a4);
-var _sqlite3_drop_modules = Module['_sqlite3_drop_modules'] = (a0, a1) => (_sqlite3_drop_modules = Module['_sqlite3_drop_modules'] = wasmExports['sqlite3_drop_modules'])(a0, a1);
-var _sqlite3_declare_vtab = Module['_sqlite3_declare_vtab'] = (a0, a1) => (_sqlite3_declare_vtab = Module['_sqlite3_declare_vtab'] = wasmExports['sqlite3_declare_vtab'])(a0, a1);
-var _sqlite3_vtab_on_conflict = Module['_sqlite3_vtab_on_conflict'] = (a0) => (_sqlite3_vtab_on_conflict = Module['_sqlite3_vtab_on_conflict'] = wasmExports['sqlite3_vtab_on_conflict'])(a0);
-var _sqlite3_vtab_config = Module['_sqlite3_vtab_config'] = (a0, a1, a2) => (_sqlite3_vtab_config = Module['_sqlite3_vtab_config'] = wasmExports['sqlite3_vtab_config'])(a0, a1, a2);
-var _sqlite3_vtab_collation = Module['_sqlite3_vtab_collation'] = (a0, a1) => (_sqlite3_vtab_collation = Module['_sqlite3_vtab_collation'] = wasmExports['sqlite3_vtab_collation'])(a0, a1);
-var _sqlite3_vtab_in = Module['_sqlite3_vtab_in'] = (a0, a1, a2) => (_sqlite3_vtab_in = Module['_sqlite3_vtab_in'] = wasmExports['sqlite3_vtab_in'])(a0, a1, a2);
-var _sqlite3_vtab_rhs_value = Module['_sqlite3_vtab_rhs_value'] = (a0, a1, a2) => (_sqlite3_vtab_rhs_value = Module['_sqlite3_vtab_rhs_value'] = wasmExports['sqlite3_vtab_rhs_value'])(a0, a1, a2);
-var _sqlite3_vtab_distinct = Module['_sqlite3_vtab_distinct'] = (a0) => (_sqlite3_vtab_distinct = Module['_sqlite3_vtab_distinct'] = wasmExports['sqlite3_vtab_distinct'])(a0);
-var _sqlite3_keyword_name = Module['_sqlite3_keyword_name'] = (a0, a1, a2) => (_sqlite3_keyword_name = Module['_sqlite3_keyword_name'] = wasmExports['sqlite3_keyword_name'])(a0, a1, a2);
-var _sqlite3_keyword_count = Module['_sqlite3_keyword_count'] = () => (_sqlite3_keyword_count = Module['_sqlite3_keyword_count'] = wasmExports['sqlite3_keyword_count'])();
-var _sqlite3_keyword_check = Module['_sqlite3_keyword_check'] = (a0, a1) => (_sqlite3_keyword_check = Module['_sqlite3_keyword_check'] = wasmExports['sqlite3_keyword_check'])(a0, a1);
-var _sqlite3_complete = Module['_sqlite3_complete'] = (a0) => (_sqlite3_complete = Module['_sqlite3_complete'] = wasmExports['sqlite3_complete'])(a0);
-var _sqlite3_complete16 = Module['_sqlite3_complete16'] = (a0) => (_sqlite3_complete16 = Module['_sqlite3_complete16'] = wasmExports['sqlite3_complete16'])(a0);
-var _sqlite3_libversion = Module['_sqlite3_libversion'] = () => (_sqlite3_libversion = Module['_sqlite3_libversion'] = wasmExports['sqlite3_libversion'])();
-var _sqlite3_libversion_number = Module['_sqlite3_libversion_number'] = () => (_sqlite3_libversion_number = Module['_sqlite3_libversion_number'] = wasmExports['sqlite3_libversion_number'])();
-var _sqlite3_threadsafe = Module['_sqlite3_threadsafe'] = () => (_sqlite3_threadsafe = Module['_sqlite3_threadsafe'] = wasmExports['sqlite3_threadsafe'])();
-var _sqlite3_initialize = Module['_sqlite3_initialize'] = () => (_sqlite3_initialize = Module['_sqlite3_initialize'] = wasmExports['sqlite3_initialize'])();
-var _sqlite3_shutdown = Module['_sqlite3_shutdown'] = () => (_sqlite3_shutdown = Module['_sqlite3_shutdown'] = wasmExports['sqlite3_shutdown'])();
-var _sqlite3_config = Module['_sqlite3_config'] = (a0, a1) => (_sqlite3_config = Module['_sqlite3_config'] = wasmExports['sqlite3_config'])(a0, a1);
-var _sqlite3_db_mutex = Module['_sqlite3_db_mutex'] = (a0) => (_sqlite3_db_mutex = Module['_sqlite3_db_mutex'] = wasmExports['sqlite3_db_mutex'])(a0);
-var _sqlite3_db_release_memory = Module['_sqlite3_db_release_memory'] = (a0) => (_sqlite3_db_release_memory = Module['_sqlite3_db_release_memory'] = wasmExports['sqlite3_db_release_memory'])(a0);
-var _sqlite3_db_cacheflush = Module['_sqlite3_db_cacheflush'] = (a0) => (_sqlite3_db_cacheflush = Module['_sqlite3_db_cacheflush'] = wasmExports['sqlite3_db_cacheflush'])(a0);
-var _sqlite3_db_config = Module['_sqlite3_db_config'] = (a0, a1, a2) => (_sqlite3_db_config = Module['_sqlite3_db_config'] = wasmExports['sqlite3_db_config'])(a0, a1, a2);
-var _sqlite3_last_insert_rowid = Module['_sqlite3_last_insert_rowid'] = (a0) => (_sqlite3_last_insert_rowid = Module['_sqlite3_last_insert_rowid'] = wasmExports['sqlite3_last_insert_rowid'])(a0);
-var _sqlite3_set_last_insert_rowid = Module['_sqlite3_set_last_insert_rowid'] = (a0, a1, a2) => (_sqlite3_set_last_insert_rowid = Module['_sqlite3_set_last_insert_rowid'] = wasmExports['sqlite3_set_last_insert_rowid'])(a0, a1, a2);
-var _sqlite3_changes64 = Module['_sqlite3_changes64'] = (a0) => (_sqlite3_changes64 = Module['_sqlite3_changes64'] = wasmExports['sqlite3_changes64'])(a0);
-var _sqlite3_changes = Module['_sqlite3_changes'] = (a0) => (_sqlite3_changes = Module['_sqlite3_changes'] = wasmExports['sqlite3_changes'])(a0);
-var _sqlite3_total_changes64 = Module['_sqlite3_total_changes64'] = (a0) => (_sqlite3_total_changes64 = Module['_sqlite3_total_changes64'] = wasmExports['sqlite3_total_changes64'])(a0);
-var _sqlite3_total_changes = Module['_sqlite3_total_changes'] = (a0) => (_sqlite3_total_changes = Module['_sqlite3_total_changes'] = wasmExports['sqlite3_total_changes'])(a0);
-var _sqlite3_txn_state = Module['_sqlite3_txn_state'] = (a0, a1) => (_sqlite3_txn_state = Module['_sqlite3_txn_state'] = wasmExports['sqlite3_txn_state'])(a0, a1);
-var _sqlite3_close = Module['_sqlite3_close'] = (a0) => (_sqlite3_close = Module['_sqlite3_close'] = wasmExports['sqlite3_close'])(a0);
-var _sqlite3_close_v2 = Module['_sqlite3_close_v2'] = (a0) => (_sqlite3_close_v2 = Module['_sqlite3_close_v2'] = wasmExports['sqlite3_close_v2'])(a0);
-var _sqlite3_busy_handler = Module['_sqlite3_busy_handler'] = (a0, a1, a2) => (_sqlite3_busy_handler = Module['_sqlite3_busy_handler'] = wasmExports['sqlite3_busy_handler'])(a0, a1, a2);
-var _sqlite3_progress_handler = Module['_sqlite3_progress_handler'] = (a0, a1, a2, a3) => (_sqlite3_progress_handler = Module['_sqlite3_progress_handler'] = wasmExports['sqlite3_progress_handler'])(a0, a1, a2, a3);
-var _sqlite3_busy_timeout = Module['_sqlite3_busy_timeout'] = (a0, a1) => (_sqlite3_busy_timeout = Module['_sqlite3_busy_timeout'] = wasmExports['sqlite3_busy_timeout'])(a0, a1);
-var _sqlite3_interrupt = Module['_sqlite3_interrupt'] = (a0) => (_sqlite3_interrupt = Module['_sqlite3_interrupt'] = wasmExports['sqlite3_interrupt'])(a0);
-var _sqlite3_is_interrupted = Module['_sqlite3_is_interrupted'] = (a0) => (_sqlite3_is_interrupted = Module['_sqlite3_is_interrupted'] = wasmExports['sqlite3_is_interrupted'])(a0);
-var _sqlite3_create_function = Module['_sqlite3_create_function'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (_sqlite3_create_function = Module['_sqlite3_create_function'] = wasmExports['sqlite3_create_function'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var _sqlite3_create_function_v2 = Module['_sqlite3_create_function_v2'] = (a0, a1, a2, a3, a4, a5, a6, a7, a8) => (_sqlite3_create_function_v2 = Module['_sqlite3_create_function_v2'] = wasmExports['sqlite3_create_function_v2'])(a0, a1, a2, a3, a4, a5, a6, a7, a8);
-var _sqlite3_create_window_function = Module['_sqlite3_create_window_function'] = (a0, a1, a2, a3, a4, a5, a6, a7, a8, a9) => (_sqlite3_create_window_function = Module['_sqlite3_create_window_function'] = wasmExports['sqlite3_create_window_function'])(a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
-var _sqlite3_create_function16 = Module['_sqlite3_create_function16'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (_sqlite3_create_function16 = Module['_sqlite3_create_function16'] = wasmExports['sqlite3_create_function16'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var _sqlite3_overload_function = Module['_sqlite3_overload_function'] = (a0, a1, a2) => (_sqlite3_overload_function = Module['_sqlite3_overload_function'] = wasmExports['sqlite3_overload_function'])(a0, a1, a2);
-var _sqlite3_trace_v2 = Module['_sqlite3_trace_v2'] = (a0, a1, a2, a3) => (_sqlite3_trace_v2 = Module['_sqlite3_trace_v2'] = wasmExports['sqlite3_trace_v2'])(a0, a1, a2, a3);
-var _sqlite3_commit_hook = Module['_sqlite3_commit_hook'] = (a0, a1, a2) => (_sqlite3_commit_hook = Module['_sqlite3_commit_hook'] = wasmExports['sqlite3_commit_hook'])(a0, a1, a2);
-var _sqlite3_update_hook = Module['_sqlite3_update_hook'] = (a0, a1, a2) => (_sqlite3_update_hook = Module['_sqlite3_update_hook'] = wasmExports['sqlite3_update_hook'])(a0, a1, a2);
-var _sqlite3_rollback_hook = Module['_sqlite3_rollback_hook'] = (a0, a1, a2) => (_sqlite3_rollback_hook = Module['_sqlite3_rollback_hook'] = wasmExports['sqlite3_rollback_hook'])(a0, a1, a2);
-var _sqlite3_autovacuum_pages = Module['_sqlite3_autovacuum_pages'] = (a0, a1, a2, a3) => (_sqlite3_autovacuum_pages = Module['_sqlite3_autovacuum_pages'] = wasmExports['sqlite3_autovacuum_pages'])(a0, a1, a2, a3);
-var _sqlite3_wal_autocheckpoint = Module['_sqlite3_wal_autocheckpoint'] = (a0, a1) => (_sqlite3_wal_autocheckpoint = Module['_sqlite3_wal_autocheckpoint'] = wasmExports['sqlite3_wal_autocheckpoint'])(a0, a1);
-var _sqlite3_wal_hook = Module['_sqlite3_wal_hook'] = (a0, a1, a2) => (_sqlite3_wal_hook = Module['_sqlite3_wal_hook'] = wasmExports['sqlite3_wal_hook'])(a0, a1, a2);
-var _sqlite3_wal_checkpoint_v2 = Module['_sqlite3_wal_checkpoint_v2'] = (a0, a1, a2, a3, a4) => (_sqlite3_wal_checkpoint_v2 = Module['_sqlite3_wal_checkpoint_v2'] = wasmExports['sqlite3_wal_checkpoint_v2'])(a0, a1, a2, a3, a4);
-var _sqlite3_wal_checkpoint = Module['_sqlite3_wal_checkpoint'] = (a0, a1) => (_sqlite3_wal_checkpoint = Module['_sqlite3_wal_checkpoint'] = wasmExports['sqlite3_wal_checkpoint'])(a0, a1);
-var _sqlite3_error_offset = Module['_sqlite3_error_offset'] = (a0) => (_sqlite3_error_offset = Module['_sqlite3_error_offset'] = wasmExports['sqlite3_error_offset'])(a0);
-var _sqlite3_errmsg16 = Module['_sqlite3_errmsg16'] = (a0) => (_sqlite3_errmsg16 = Module['_sqlite3_errmsg16'] = wasmExports['sqlite3_errmsg16'])(a0);
-var _sqlite3_errcode = Module['_sqlite3_errcode'] = (a0) => (_sqlite3_errcode = Module['_sqlite3_errcode'] = wasmExports['sqlite3_errcode'])(a0);
-var _sqlite3_extended_errcode = Module['_sqlite3_extended_errcode'] = (a0) => (_sqlite3_extended_errcode = Module['_sqlite3_extended_errcode'] = wasmExports['sqlite3_extended_errcode'])(a0);
-var _sqlite3_system_errno = Module['_sqlite3_system_errno'] = (a0) => (_sqlite3_system_errno = Module['_sqlite3_system_errno'] = wasmExports['sqlite3_system_errno'])(a0);
-var _sqlite3_errstr = Module['_sqlite3_errstr'] = (a0) => (_sqlite3_errstr = Module['_sqlite3_errstr'] = wasmExports['sqlite3_errstr'])(a0);
-var _sqlite3_limit = Module['_sqlite3_limit'] = (a0, a1, a2) => (_sqlite3_limit = Module['_sqlite3_limit'] = wasmExports['sqlite3_limit'])(a0, a1, a2);
-var _sqlite3_open = Module['_sqlite3_open'] = (a0, a1) => (_sqlite3_open = Module['_sqlite3_open'] = wasmExports['sqlite3_open'])(a0, a1);
-var _sqlite3_open_v2 = Module['_sqlite3_open_v2'] = (a0, a1, a2, a3) => (_sqlite3_open_v2 = Module['_sqlite3_open_v2'] = wasmExports['sqlite3_open_v2'])(a0, a1, a2, a3);
-var _sqlite3_open16 = Module['_sqlite3_open16'] = (a0, a1) => (_sqlite3_open16 = Module['_sqlite3_open16'] = wasmExports['sqlite3_open16'])(a0, a1);
-var _sqlite3_create_collation = Module['_sqlite3_create_collation'] = (a0, a1, a2, a3, a4) => (_sqlite3_create_collation = Module['_sqlite3_create_collation'] = wasmExports['sqlite3_create_collation'])(a0, a1, a2, a3, a4);
-var _sqlite3_create_collation_v2 = Module['_sqlite3_create_collation_v2'] = (a0, a1, a2, a3, a4, a5) => (_sqlite3_create_collation_v2 = Module['_sqlite3_create_collation_v2'] = wasmExports['sqlite3_create_collation_v2'])(a0, a1, a2, a3, a4, a5);
-var _sqlite3_create_collation16 = Module['_sqlite3_create_collation16'] = (a0, a1, a2, a3, a4) => (_sqlite3_create_collation16 = Module['_sqlite3_create_collation16'] = wasmExports['sqlite3_create_collation16'])(a0, a1, a2, a3, a4);
-var _sqlite3_collation_needed = Module['_sqlite3_collation_needed'] = (a0, a1, a2) => (_sqlite3_collation_needed = Module['_sqlite3_collation_needed'] = wasmExports['sqlite3_collation_needed'])(a0, a1, a2);
-var _sqlite3_collation_needed16 = Module['_sqlite3_collation_needed16'] = (a0, a1, a2) => (_sqlite3_collation_needed16 = Module['_sqlite3_collation_needed16'] = wasmExports['sqlite3_collation_needed16'])(a0, a1, a2);
-var _sqlite3_get_clientdata = Module['_sqlite3_get_clientdata'] = (a0, a1) => (_sqlite3_get_clientdata = Module['_sqlite3_get_clientdata'] = wasmExports['sqlite3_get_clientdata'])(a0, a1);
-var _sqlite3_set_clientdata = Module['_sqlite3_set_clientdata'] = (a0, a1, a2, a3) => (_sqlite3_set_clientdata = Module['_sqlite3_set_clientdata'] = wasmExports['sqlite3_set_clientdata'])(a0, a1, a2, a3);
-var _sqlite3_get_autocommit = Module['_sqlite3_get_autocommit'] = (a0) => (_sqlite3_get_autocommit = Module['_sqlite3_get_autocommit'] = wasmExports['sqlite3_get_autocommit'])(a0);
-var _sqlite3_table_column_metadata = Module['_sqlite3_table_column_metadata'] = (a0, a1, a2, a3, a4, a5, a6, a7, a8) => (_sqlite3_table_column_metadata = Module['_sqlite3_table_column_metadata'] = wasmExports['sqlite3_table_column_metadata'])(a0, a1, a2, a3, a4, a5, a6, a7, a8);
-var _sqlite3_sleep = Module['_sqlite3_sleep'] = (a0) => (_sqlite3_sleep = Module['_sqlite3_sleep'] = wasmExports['sqlite3_sleep'])(a0);
-var _sqlite3_extended_result_codes = Module['_sqlite3_extended_result_codes'] = (a0, a1) => (_sqlite3_extended_result_codes = Module['_sqlite3_extended_result_codes'] = wasmExports['sqlite3_extended_result_codes'])(a0, a1);
-var _sqlite3_file_control = Module['_sqlite3_file_control'] = (a0, a1, a2, a3) => (_sqlite3_file_control = Module['_sqlite3_file_control'] = wasmExports['sqlite3_file_control'])(a0, a1, a2, a3);
-var _sqlite3_test_control = Module['_sqlite3_test_control'] = (a0, a1) => (_sqlite3_test_control = Module['_sqlite3_test_control'] = wasmExports['sqlite3_test_control'])(a0, a1);
-var _sqlite3_create_filename = Module['_sqlite3_create_filename'] = (a0, a1, a2, a3, a4) => (_sqlite3_create_filename = Module['_sqlite3_create_filename'] = wasmExports['sqlite3_create_filename'])(a0, a1, a2, a3, a4);
-var _sqlite3_free_filename = Module['_sqlite3_free_filename'] = (a0) => (_sqlite3_free_filename = Module['_sqlite3_free_filename'] = wasmExports['sqlite3_free_filename'])(a0);
-var _sqlite3_uri_parameter = Module['_sqlite3_uri_parameter'] = (a0, a1) => (_sqlite3_uri_parameter = Module['_sqlite3_uri_parameter'] = wasmExports['sqlite3_uri_parameter'])(a0, a1);
-var _sqlite3_uri_key = Module['_sqlite3_uri_key'] = (a0, a1) => (_sqlite3_uri_key = Module['_sqlite3_uri_key'] = wasmExports['sqlite3_uri_key'])(a0, a1);
-var _sqlite3_uri_boolean = Module['_sqlite3_uri_boolean'] = (a0, a1, a2) => (_sqlite3_uri_boolean = Module['_sqlite3_uri_boolean'] = wasmExports['sqlite3_uri_boolean'])(a0, a1, a2);
-var _sqlite3_uri_int64 = Module['_sqlite3_uri_int64'] = (a0, a1, a2, a3) => (_sqlite3_uri_int64 = Module['_sqlite3_uri_int64'] = wasmExports['sqlite3_uri_int64'])(a0, a1, a2, a3);
-var _sqlite3_filename_database = Module['_sqlite3_filename_database'] = (a0) => (_sqlite3_filename_database = Module['_sqlite3_filename_database'] = wasmExports['sqlite3_filename_database'])(a0);
-var _sqlite3_filename_journal = Module['_sqlite3_filename_journal'] = (a0) => (_sqlite3_filename_journal = Module['_sqlite3_filename_journal'] = wasmExports['sqlite3_filename_journal'])(a0);
-var _sqlite3_filename_wal = Module['_sqlite3_filename_wal'] = (a0) => (_sqlite3_filename_wal = Module['_sqlite3_filename_wal'] = wasmExports['sqlite3_filename_wal'])(a0);
-var _sqlite3_db_name = Module['_sqlite3_db_name'] = (a0, a1) => (_sqlite3_db_name = Module['_sqlite3_db_name'] = wasmExports['sqlite3_db_name'])(a0, a1);
-var _sqlite3_db_filename = Module['_sqlite3_db_filename'] = (a0, a1) => (_sqlite3_db_filename = Module['_sqlite3_db_filename'] = wasmExports['sqlite3_db_filename'])(a0, a1);
-var _sqlite3_db_readonly = Module['_sqlite3_db_readonly'] = (a0, a1) => (_sqlite3_db_readonly = Module['_sqlite3_db_readonly'] = wasmExports['sqlite3_db_readonly'])(a0, a1);
-var _sqlite3_compileoption_used = Module['_sqlite3_compileoption_used'] = (a0) => (_sqlite3_compileoption_used = Module['_sqlite3_compileoption_used'] = wasmExports['sqlite3_compileoption_used'])(a0);
-var _sqlite3_compileoption_get = Module['_sqlite3_compileoption_get'] = (a0) => (_sqlite3_compileoption_get = Module['_sqlite3_compileoption_get'] = wasmExports['sqlite3_compileoption_get'])(a0);
-var _sqlite3_sourceid = Module['_sqlite3_sourceid'] = () => (_sqlite3_sourceid = Module['_sqlite3_sourceid'] = wasmExports['sqlite3_sourceid'])();
-var _malloc = Module['_malloc'] = (a0) => (_malloc = Module['_malloc'] = wasmExports['malloc'])(a0);
-var _free = Module['_free'] = (a0) => (_free = Module['_free'] = wasmExports['free'])(a0);
-var _RegisterExtensionFunctions = Module['_RegisterExtensionFunctions'] = (a0) => (_RegisterExtensionFunctions = Module['_RegisterExtensionFunctions'] = wasmExports['RegisterExtensionFunctions'])(a0);
-var _getSqliteFree = Module['_getSqliteFree'] = () => (_getSqliteFree = Module['_getSqliteFree'] = wasmExports['getSqliteFree'])();
-var _main = Module['_main'] = (a0, a1) => (_main = Module['_main'] = wasmExports['main'])(a0, a1);
-var _libauthorizer_set_authorizer = Module['_libauthorizer_set_authorizer'] = (a0, a1, a2) => (_libauthorizer_set_authorizer = Module['_libauthorizer_set_authorizer'] = wasmExports['libauthorizer_set_authorizer'])(a0, a1, a2);
-var _libfunction_create_function = Module['_libfunction_create_function'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (_libfunction_create_function = Module['_libfunction_create_function'] = wasmExports['libfunction_create_function'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var _libhook_commit_hook = Module['_libhook_commit_hook'] = (a0, a1, a2) => (_libhook_commit_hook = Module['_libhook_commit_hook'] = wasmExports['libhook_commit_hook'])(a0, a1, a2);
-var _libhook_update_hook = Module['_libhook_update_hook'] = (a0, a1, a2) => (_libhook_update_hook = Module['_libhook_update_hook'] = wasmExports['libhook_update_hook'])(a0, a1, a2);
-var _libprogress_progress_handler = Module['_libprogress_progress_handler'] = (a0, a1, a2, a3) => (_libprogress_progress_handler = Module['_libprogress_progress_handler'] = wasmExports['libprogress_progress_handler'])(a0, a1, a2, a3);
-var _libvfs_vfs_register = Module['_libvfs_vfs_register'] = (a0, a1, a2, a3, a4, a5) => (_libvfs_vfs_register = Module['_libvfs_vfs_register'] = wasmExports['libvfs_vfs_register'])(a0, a1, a2, a3, a4, a5);
-var _emscripten_builtin_memalign = (a0, a1) => (_emscripten_builtin_memalign = wasmExports['emscripten_builtin_memalign'])(a0, a1);
-var __emscripten_timeout = (a0, a1) => (__emscripten_timeout = wasmExports['_emscripten_timeout'])(a0, a1);
-var __emscripten_tempret_set = (a0) => (__emscripten_tempret_set = wasmExports['_emscripten_tempret_set'])(a0);
-var __emscripten_tempret_get = () => (__emscripten_tempret_get = wasmExports['_emscripten_tempret_get'])();
+var ___wasm_call_ctors = createExportWrapper('__wasm_call_ctors', 0);
+var _sqlite3_status64 = Module['_sqlite3_status64'] = createExportWrapper('sqlite3_status64', 4);
+var _sqlite3_status = Module['_sqlite3_status'] = createExportWrapper('sqlite3_status', 4);
+var _sqlite3_db_status = Module['_sqlite3_db_status'] = createExportWrapper('sqlite3_db_status', 5);
+var _sqlite3_msize = Module['_sqlite3_msize'] = createExportWrapper('sqlite3_msize', 1);
+var _sqlite3_vfs_find = Module['_sqlite3_vfs_find'] = createExportWrapper('sqlite3_vfs_find', 1);
+var _sqlite3_vfs_register = Module['_sqlite3_vfs_register'] = createExportWrapper('sqlite3_vfs_register', 2);
+var _sqlite3_vfs_unregister = Module['_sqlite3_vfs_unregister'] = createExportWrapper('sqlite3_vfs_unregister', 1);
+var _sqlite3_release_memory = Module['_sqlite3_release_memory'] = createExportWrapper('sqlite3_release_memory', 1);
+var _sqlite3_soft_heap_limit64 = Module['_sqlite3_soft_heap_limit64'] = createExportWrapper('sqlite3_soft_heap_limit64', 2);
+var _sqlite3_memory_used = Module['_sqlite3_memory_used'] = createExportWrapper('sqlite3_memory_used', 0);
+var _sqlite3_hard_heap_limit64 = Module['_sqlite3_hard_heap_limit64'] = createExportWrapper('sqlite3_hard_heap_limit64', 2);
+var _sqlite3_memory_highwater = Module['_sqlite3_memory_highwater'] = createExportWrapper('sqlite3_memory_highwater', 1);
+var _sqlite3_malloc = Module['_sqlite3_malloc'] = createExportWrapper('sqlite3_malloc', 1);
+var _sqlite3_malloc64 = Module['_sqlite3_malloc64'] = createExportWrapper('sqlite3_malloc64', 2);
+var _sqlite3_free = Module['_sqlite3_free'] = createExportWrapper('sqlite3_free', 1);
+var _sqlite3_realloc = Module['_sqlite3_realloc'] = createExportWrapper('sqlite3_realloc', 2);
+var _sqlite3_realloc64 = Module['_sqlite3_realloc64'] = createExportWrapper('sqlite3_realloc64', 3);
+var _sqlite3_str_vappendf = Module['_sqlite3_str_vappendf'] = createExportWrapper('sqlite3_str_vappendf', 3);
+var _sqlite3_str_append = Module['_sqlite3_str_append'] = createExportWrapper('sqlite3_str_append', 3);
+var _sqlite3_str_appendchar = Module['_sqlite3_str_appendchar'] = createExportWrapper('sqlite3_str_appendchar', 3);
+var _sqlite3_str_appendall = Module['_sqlite3_str_appendall'] = createExportWrapper('sqlite3_str_appendall', 2);
+var _sqlite3_str_appendf = Module['_sqlite3_str_appendf'] = createExportWrapper('sqlite3_str_appendf', 3);
+var _sqlite3_value_int64 = Module['_sqlite3_value_int64'] = createExportWrapper('sqlite3_value_int64', 1);
+var _sqlite3_value_double = Module['_sqlite3_value_double'] = createExportWrapper('sqlite3_value_double', 1);
+var _sqlite3_value_text = Module['_sqlite3_value_text'] = createExportWrapper('sqlite3_value_text', 1);
+var _sqlite3_str_reset = Module['_sqlite3_str_reset'] = createExportWrapper('sqlite3_str_reset', 1);
+var _sqlite3_str_finish = Module['_sqlite3_str_finish'] = createExportWrapper('sqlite3_str_finish', 1);
+var _sqlite3_str_errcode = Module['_sqlite3_str_errcode'] = createExportWrapper('sqlite3_str_errcode', 1);
+var _sqlite3_str_length = Module['_sqlite3_str_length'] = createExportWrapper('sqlite3_str_length', 1);
+var _sqlite3_str_value = Module['_sqlite3_str_value'] = createExportWrapper('sqlite3_str_value', 1);
+var _sqlite3_str_new = Module['_sqlite3_str_new'] = createExportWrapper('sqlite3_str_new', 1);
+var _sqlite3_vmprintf = Module['_sqlite3_vmprintf'] = createExportWrapper('sqlite3_vmprintf', 2);
+var _sqlite3_mprintf = Module['_sqlite3_mprintf'] = createExportWrapper('sqlite3_mprintf', 2);
+var _sqlite3_vsnprintf = Module['_sqlite3_vsnprintf'] = createExportWrapper('sqlite3_vsnprintf', 4);
+var _sqlite3_snprintf = Module['_sqlite3_snprintf'] = createExportWrapper('sqlite3_snprintf', 4);
+var _sqlite3_log = Module['_sqlite3_log'] = createExportWrapper('sqlite3_log', 3);
+var _sqlite3_randomness = Module['_sqlite3_randomness'] = createExportWrapper('sqlite3_randomness', 2);
+var _sqlite3_stricmp = Module['_sqlite3_stricmp'] = createExportWrapper('sqlite3_stricmp', 2);
+var _sqlite3_strnicmp = Module['_sqlite3_strnicmp'] = createExportWrapper('sqlite3_strnicmp', 3);
+var _sqlite3_os_init = Module['_sqlite3_os_init'] = createExportWrapper('sqlite3_os_init', 0);
+var _sqlite3_os_end = Module['_sqlite3_os_end'] = createExportWrapper('sqlite3_os_end', 0);
+var _sqlite3_serialize = Module['_sqlite3_serialize'] = createExportWrapper('sqlite3_serialize', 4);
+var _sqlite3_prepare_v2 = Module['_sqlite3_prepare_v2'] = createExportWrapper('sqlite3_prepare_v2', 5);
+var _sqlite3_step = Module['_sqlite3_step'] = createExportWrapper('sqlite3_step', 1);
+var _sqlite3_column_int64 = Module['_sqlite3_column_int64'] = createExportWrapper('sqlite3_column_int64', 2);
+var _sqlite3_reset = Module['_sqlite3_reset'] = createExportWrapper('sqlite3_reset', 1);
+var _sqlite3_exec = Module['_sqlite3_exec'] = createExportWrapper('sqlite3_exec', 5);
+var _sqlite3_column_int = Module['_sqlite3_column_int'] = createExportWrapper('sqlite3_column_int', 2);
+var _sqlite3_finalize = Module['_sqlite3_finalize'] = createExportWrapper('sqlite3_finalize', 1);
+var _sqlite3_file_control = Module['_sqlite3_file_control'] = createExportWrapper('sqlite3_file_control', 4);
+var _sqlite3_column_count = Module['_sqlite3_column_count'] = createExportWrapper('sqlite3_column_count', 1);
+var _sqlite3_column_name = Module['_sqlite3_column_name'] = createExportWrapper('sqlite3_column_name', 2);
+var _sqlite3_column_text = Module['_sqlite3_column_text'] = createExportWrapper('sqlite3_column_text', 2);
+var _sqlite3_column_type = Module['_sqlite3_column_type'] = createExportWrapper('sqlite3_column_type', 2);
+var _sqlite3_errmsg = Module['_sqlite3_errmsg'] = createExportWrapper('sqlite3_errmsg', 1);
+var _sqlite3_value_int = Module['_sqlite3_value_int'] = createExportWrapper('sqlite3_value_int', 1);
+var _sqlite3_deserialize = Module['_sqlite3_deserialize'] = createExportWrapper('sqlite3_deserialize', 8);
+var _sqlite3_database_file_object = Module['_sqlite3_database_file_object'] = createExportWrapper('sqlite3_database_file_object', 1);
+var _sqlite3_backup_init = Module['_sqlite3_backup_init'] = createExportWrapper('sqlite3_backup_init', 4);
+var _sqlite3_backup_step = Module['_sqlite3_backup_step'] = createExportWrapper('sqlite3_backup_step', 2);
+var _sqlite3_backup_finish = Module['_sqlite3_backup_finish'] = createExportWrapper('sqlite3_backup_finish', 1);
+var _sqlite3_backup_remaining = Module['_sqlite3_backup_remaining'] = createExportWrapper('sqlite3_backup_remaining', 1);
+var _sqlite3_backup_pagecount = Module['_sqlite3_backup_pagecount'] = createExportWrapper('sqlite3_backup_pagecount', 1);
+var _sqlite3_clear_bindings = Module['_sqlite3_clear_bindings'] = createExportWrapper('sqlite3_clear_bindings', 1);
+var _sqlite3_value_blob = Module['_sqlite3_value_blob'] = createExportWrapper('sqlite3_value_blob', 1);
+var _sqlite3_value_bytes = Module['_sqlite3_value_bytes'] = createExportWrapper('sqlite3_value_bytes', 1);
+var _sqlite3_value_bytes16 = Module['_sqlite3_value_bytes16'] = createExportWrapper('sqlite3_value_bytes16', 1);
+var _sqlite3_value_subtype = Module['_sqlite3_value_subtype'] = createExportWrapper('sqlite3_value_subtype', 1);
+var _sqlite3_value_pointer = Module['_sqlite3_value_pointer'] = createExportWrapper('sqlite3_value_pointer', 2);
+var _sqlite3_value_text16 = Module['_sqlite3_value_text16'] = createExportWrapper('sqlite3_value_text16', 1);
+var _sqlite3_value_text16be = Module['_sqlite3_value_text16be'] = createExportWrapper('sqlite3_value_text16be', 1);
+var _sqlite3_value_text16le = Module['_sqlite3_value_text16le'] = createExportWrapper('sqlite3_value_text16le', 1);
+var _sqlite3_value_type = Module['_sqlite3_value_type'] = createExportWrapper('sqlite3_value_type', 1);
+var _sqlite3_value_encoding = Module['_sqlite3_value_encoding'] = createExportWrapper('sqlite3_value_encoding', 1);
+var _sqlite3_value_nochange = Module['_sqlite3_value_nochange'] = createExportWrapper('sqlite3_value_nochange', 1);
+var _sqlite3_value_frombind = Module['_sqlite3_value_frombind'] = createExportWrapper('sqlite3_value_frombind', 1);
+var _sqlite3_value_dup = Module['_sqlite3_value_dup'] = createExportWrapper('sqlite3_value_dup', 1);
+var _sqlite3_value_free = Module['_sqlite3_value_free'] = createExportWrapper('sqlite3_value_free', 1);
+var _sqlite3_result_blob = Module['_sqlite3_result_blob'] = createExportWrapper('sqlite3_result_blob', 4);
+var _sqlite3_result_error_toobig = Module['_sqlite3_result_error_toobig'] = createExportWrapper('sqlite3_result_error_toobig', 1);
+var _sqlite3_result_error_nomem = Module['_sqlite3_result_error_nomem'] = createExportWrapper('sqlite3_result_error_nomem', 1);
+var _sqlite3_result_blob64 = Module['_sqlite3_result_blob64'] = createExportWrapper('sqlite3_result_blob64', 5);
+var _sqlite3_result_double = Module['_sqlite3_result_double'] = createExportWrapper('sqlite3_result_double', 2);
+var _sqlite3_result_error = Module['_sqlite3_result_error'] = createExportWrapper('sqlite3_result_error', 3);
+var _sqlite3_result_error16 = Module['_sqlite3_result_error16'] = createExportWrapper('sqlite3_result_error16', 3);
+var _sqlite3_result_int = Module['_sqlite3_result_int'] = createExportWrapper('sqlite3_result_int', 2);
+var _sqlite3_result_int64 = Module['_sqlite3_result_int64'] = createExportWrapper('sqlite3_result_int64', 3);
+var _sqlite3_result_null = Module['_sqlite3_result_null'] = createExportWrapper('sqlite3_result_null', 1);
+var _sqlite3_result_pointer = Module['_sqlite3_result_pointer'] = createExportWrapper('sqlite3_result_pointer', 4);
+var _sqlite3_result_subtype = Module['_sqlite3_result_subtype'] = createExportWrapper('sqlite3_result_subtype', 2);
+var _sqlite3_result_text = Module['_sqlite3_result_text'] = createExportWrapper('sqlite3_result_text', 4);
+var _sqlite3_result_text64 = Module['_sqlite3_result_text64'] = createExportWrapper('sqlite3_result_text64', 6);
+var _sqlite3_result_text16 = Module['_sqlite3_result_text16'] = createExportWrapper('sqlite3_result_text16', 4);
+var _sqlite3_result_text16be = Module['_sqlite3_result_text16be'] = createExportWrapper('sqlite3_result_text16be', 4);
+var _sqlite3_result_text16le = Module['_sqlite3_result_text16le'] = createExportWrapper('sqlite3_result_text16le', 4);
+var _sqlite3_result_value = Module['_sqlite3_result_value'] = createExportWrapper('sqlite3_result_value', 2);
+var _sqlite3_result_zeroblob = Module['_sqlite3_result_zeroblob'] = createExportWrapper('sqlite3_result_zeroblob', 2);
+var _sqlite3_result_zeroblob64 = Module['_sqlite3_result_zeroblob64'] = createExportWrapper('sqlite3_result_zeroblob64', 3);
+var _sqlite3_result_error_code = Module['_sqlite3_result_error_code'] = createExportWrapper('sqlite3_result_error_code', 2);
+var _sqlite3_sql = Module['_sqlite3_sql'] = createExportWrapper('sqlite3_sql', 1);
+var _sqlite3_user_data = Module['_sqlite3_user_data'] = createExportWrapper('sqlite3_user_data', 1);
+var _sqlite3_context_db_handle = Module['_sqlite3_context_db_handle'] = createExportWrapper('sqlite3_context_db_handle', 1);
+var _sqlite3_vtab_nochange = Module['_sqlite3_vtab_nochange'] = createExportWrapper('sqlite3_vtab_nochange', 1);
+var _sqlite3_vtab_in_first = Module['_sqlite3_vtab_in_first'] = createExportWrapper('sqlite3_vtab_in_first', 2);
+var _sqlite3_vtab_in_next = Module['_sqlite3_vtab_in_next'] = createExportWrapper('sqlite3_vtab_in_next', 2);
+var _sqlite3_aggregate_context = Module['_sqlite3_aggregate_context'] = createExportWrapper('sqlite3_aggregate_context', 2);
+var _sqlite3_get_auxdata = Module['_sqlite3_get_auxdata'] = createExportWrapper('sqlite3_get_auxdata', 2);
+var _sqlite3_set_auxdata = Module['_sqlite3_set_auxdata'] = createExportWrapper('sqlite3_set_auxdata', 4);
+var _sqlite3_data_count = Module['_sqlite3_data_count'] = createExportWrapper('sqlite3_data_count', 1);
+var _sqlite3_column_blob = Module['_sqlite3_column_blob'] = createExportWrapper('sqlite3_column_blob', 2);
+var _sqlite3_column_bytes = Module['_sqlite3_column_bytes'] = createExportWrapper('sqlite3_column_bytes', 2);
+var _sqlite3_column_bytes16 = Module['_sqlite3_column_bytes16'] = createExportWrapper('sqlite3_column_bytes16', 2);
+var _sqlite3_column_double = Module['_sqlite3_column_double'] = createExportWrapper('sqlite3_column_double', 2);
+var _sqlite3_column_value = Module['_sqlite3_column_value'] = createExportWrapper('sqlite3_column_value', 2);
+var _sqlite3_column_text16 = Module['_sqlite3_column_text16'] = createExportWrapper('sqlite3_column_text16', 2);
+var _sqlite3_column_name16 = Module['_sqlite3_column_name16'] = createExportWrapper('sqlite3_column_name16', 2);
+var _sqlite3_bind_blob = Module['_sqlite3_bind_blob'] = createExportWrapper('sqlite3_bind_blob', 5);
+var _sqlite3_bind_blob64 = Module['_sqlite3_bind_blob64'] = createExportWrapper('sqlite3_bind_blob64', 6);
+var _sqlite3_bind_double = Module['_sqlite3_bind_double'] = createExportWrapper('sqlite3_bind_double', 3);
+var _sqlite3_bind_int = Module['_sqlite3_bind_int'] = createExportWrapper('sqlite3_bind_int', 3);
+var _sqlite3_bind_int64 = Module['_sqlite3_bind_int64'] = createExportWrapper('sqlite3_bind_int64', 4);
+var _sqlite3_bind_null = Module['_sqlite3_bind_null'] = createExportWrapper('sqlite3_bind_null', 2);
+var _sqlite3_bind_pointer = Module['_sqlite3_bind_pointer'] = createExportWrapper('sqlite3_bind_pointer', 5);
+var _sqlite3_bind_text = Module['_sqlite3_bind_text'] = createExportWrapper('sqlite3_bind_text', 5);
+var _sqlite3_bind_text64 = Module['_sqlite3_bind_text64'] = createExportWrapper('sqlite3_bind_text64', 7);
+var _sqlite3_bind_text16 = Module['_sqlite3_bind_text16'] = createExportWrapper('sqlite3_bind_text16', 5);
+var _sqlite3_bind_value = Module['_sqlite3_bind_value'] = createExportWrapper('sqlite3_bind_value', 3);
+var _sqlite3_bind_zeroblob = Module['_sqlite3_bind_zeroblob'] = createExportWrapper('sqlite3_bind_zeroblob', 3);
+var _sqlite3_bind_zeroblob64 = Module['_sqlite3_bind_zeroblob64'] = createExportWrapper('sqlite3_bind_zeroblob64', 4);
+var _sqlite3_bind_parameter_count = Module['_sqlite3_bind_parameter_count'] = createExportWrapper('sqlite3_bind_parameter_count', 1);
+var _sqlite3_bind_parameter_name = Module['_sqlite3_bind_parameter_name'] = createExportWrapper('sqlite3_bind_parameter_name', 2);
+var _sqlite3_bind_parameter_index = Module['_sqlite3_bind_parameter_index'] = createExportWrapper('sqlite3_bind_parameter_index', 2);
+var _sqlite3_db_handle = Module['_sqlite3_db_handle'] = createExportWrapper('sqlite3_db_handle', 1);
+var _sqlite3_stmt_readonly = Module['_sqlite3_stmt_readonly'] = createExportWrapper('sqlite3_stmt_readonly', 1);
+var _sqlite3_stmt_isexplain = Module['_sqlite3_stmt_isexplain'] = createExportWrapper('sqlite3_stmt_isexplain', 1);
+var _sqlite3_stmt_explain = Module['_sqlite3_stmt_explain'] = createExportWrapper('sqlite3_stmt_explain', 2);
+var _sqlite3_stmt_busy = Module['_sqlite3_stmt_busy'] = createExportWrapper('sqlite3_stmt_busy', 1);
+var _sqlite3_next_stmt = Module['_sqlite3_next_stmt'] = createExportWrapper('sqlite3_next_stmt', 2);
+var _sqlite3_stmt_status = Module['_sqlite3_stmt_status'] = createExportWrapper('sqlite3_stmt_status', 3);
+var _sqlite3_expanded_sql = Module['_sqlite3_expanded_sql'] = createExportWrapper('sqlite3_expanded_sql', 1);
+var _sqlite3_value_numeric_type = Module['_sqlite3_value_numeric_type'] = createExportWrapper('sqlite3_value_numeric_type', 1);
+var _sqlite3_blob_open = Module['_sqlite3_blob_open'] = createExportWrapper('sqlite3_blob_open', 8);
+var _sqlite3_blob_close = Module['_sqlite3_blob_close'] = createExportWrapper('sqlite3_blob_close', 1);
+var _sqlite3_blob_read = Module['_sqlite3_blob_read'] = createExportWrapper('sqlite3_blob_read', 4);
+var _sqlite3_blob_write = Module['_sqlite3_blob_write'] = createExportWrapper('sqlite3_blob_write', 4);
+var _sqlite3_blob_bytes = Module['_sqlite3_blob_bytes'] = createExportWrapper('sqlite3_blob_bytes', 1);
+var _sqlite3_blob_reopen = Module['_sqlite3_blob_reopen'] = createExportWrapper('sqlite3_blob_reopen', 3);
+var _sqlite3_set_authorizer = Module['_sqlite3_set_authorizer'] = createExportWrapper('sqlite3_set_authorizer', 3);
+var _sqlite3_strglob = Module['_sqlite3_strglob'] = createExportWrapper('sqlite3_strglob', 2);
+var _sqlite3_strlike = Module['_sqlite3_strlike'] = createExportWrapper('sqlite3_strlike', 3);
+var _sqlite3_auto_extension = Module['_sqlite3_auto_extension'] = createExportWrapper('sqlite3_auto_extension', 1);
+var _sqlite3_cancel_auto_extension = Module['_sqlite3_cancel_auto_extension'] = createExportWrapper('sqlite3_cancel_auto_extension', 1);
+var _sqlite3_reset_auto_extension = Module['_sqlite3_reset_auto_extension'] = createExportWrapper('sqlite3_reset_auto_extension', 0);
+var _sqlite3_prepare = Module['_sqlite3_prepare'] = createExportWrapper('sqlite3_prepare', 5);
+var _sqlite3_prepare_v3 = Module['_sqlite3_prepare_v3'] = createExportWrapper('sqlite3_prepare_v3', 6);
+var _sqlite3_prepare16 = Module['_sqlite3_prepare16'] = createExportWrapper('sqlite3_prepare16', 5);
+var _sqlite3_prepare16_v2 = Module['_sqlite3_prepare16_v2'] = createExportWrapper('sqlite3_prepare16_v2', 5);
+var _sqlite3_prepare16_v3 = Module['_sqlite3_prepare16_v3'] = createExportWrapper('sqlite3_prepare16_v3', 6);
+var _sqlite3_get_table = Module['_sqlite3_get_table'] = createExportWrapper('sqlite3_get_table', 6);
+var _sqlite3_free_table = Module['_sqlite3_free_table'] = createExportWrapper('sqlite3_free_table', 1);
+var _sqlite3_create_module = Module['_sqlite3_create_module'] = createExportWrapper('sqlite3_create_module', 4);
+var _sqlite3_create_module_v2 = Module['_sqlite3_create_module_v2'] = createExportWrapper('sqlite3_create_module_v2', 5);
+var _sqlite3_drop_modules = Module['_sqlite3_drop_modules'] = createExportWrapper('sqlite3_drop_modules', 2);
+var _sqlite3_declare_vtab = Module['_sqlite3_declare_vtab'] = createExportWrapper('sqlite3_declare_vtab', 2);
+var _sqlite3_vtab_on_conflict = Module['_sqlite3_vtab_on_conflict'] = createExportWrapper('sqlite3_vtab_on_conflict', 1);
+var _sqlite3_vtab_config = Module['_sqlite3_vtab_config'] = createExportWrapper('sqlite3_vtab_config', 3);
+var _sqlite3_vtab_collation = Module['_sqlite3_vtab_collation'] = createExportWrapper('sqlite3_vtab_collation', 2);
+var _sqlite3_vtab_in = Module['_sqlite3_vtab_in'] = createExportWrapper('sqlite3_vtab_in', 3);
+var _sqlite3_vtab_rhs_value = Module['_sqlite3_vtab_rhs_value'] = createExportWrapper('sqlite3_vtab_rhs_value', 3);
+var _sqlite3_vtab_distinct = Module['_sqlite3_vtab_distinct'] = createExportWrapper('sqlite3_vtab_distinct', 1);
+var _sqlite3_keyword_name = Module['_sqlite3_keyword_name'] = createExportWrapper('sqlite3_keyword_name', 3);
+var _sqlite3_keyword_count = Module['_sqlite3_keyword_count'] = createExportWrapper('sqlite3_keyword_count', 0);
+var _sqlite3_keyword_check = Module['_sqlite3_keyword_check'] = createExportWrapper('sqlite3_keyword_check', 2);
+var _sqlite3_complete = Module['_sqlite3_complete'] = createExportWrapper('sqlite3_complete', 1);
+var _sqlite3_complete16 = Module['_sqlite3_complete16'] = createExportWrapper('sqlite3_complete16', 1);
+var _sqlite3_libversion = Module['_sqlite3_libversion'] = createExportWrapper('sqlite3_libversion', 0);
+var _sqlite3_libversion_number = Module['_sqlite3_libversion_number'] = createExportWrapper('sqlite3_libversion_number', 0);
+var _sqlite3_threadsafe = Module['_sqlite3_threadsafe'] = createExportWrapper('sqlite3_threadsafe', 0);
+var _sqlite3_initialize = Module['_sqlite3_initialize'] = createExportWrapper('sqlite3_initialize', 0);
+var _sqlite3_shutdown = Module['_sqlite3_shutdown'] = createExportWrapper('sqlite3_shutdown', 0);
+var _sqlite3_config = Module['_sqlite3_config'] = createExportWrapper('sqlite3_config', 2);
+var _sqlite3_db_mutex = Module['_sqlite3_db_mutex'] = createExportWrapper('sqlite3_db_mutex', 1);
+var _sqlite3_db_release_memory = Module['_sqlite3_db_release_memory'] = createExportWrapper('sqlite3_db_release_memory', 1);
+var _sqlite3_db_cacheflush = Module['_sqlite3_db_cacheflush'] = createExportWrapper('sqlite3_db_cacheflush', 1);
+var _sqlite3_db_config = Module['_sqlite3_db_config'] = createExportWrapper('sqlite3_db_config', 3);
+var _sqlite3_last_insert_rowid = Module['_sqlite3_last_insert_rowid'] = createExportWrapper('sqlite3_last_insert_rowid', 1);
+var _sqlite3_set_last_insert_rowid = Module['_sqlite3_set_last_insert_rowid'] = createExportWrapper('sqlite3_set_last_insert_rowid', 3);
+var _sqlite3_changes64 = Module['_sqlite3_changes64'] = createExportWrapper('sqlite3_changes64', 1);
+var _sqlite3_changes = Module['_sqlite3_changes'] = createExportWrapper('sqlite3_changes', 1);
+var _sqlite3_total_changes64 = Module['_sqlite3_total_changes64'] = createExportWrapper('sqlite3_total_changes64', 1);
+var _sqlite3_total_changes = Module['_sqlite3_total_changes'] = createExportWrapper('sqlite3_total_changes', 1);
+var _sqlite3_txn_state = Module['_sqlite3_txn_state'] = createExportWrapper('sqlite3_txn_state', 2);
+var _sqlite3_close = Module['_sqlite3_close'] = createExportWrapper('sqlite3_close', 1);
+var _sqlite3_close_v2 = Module['_sqlite3_close_v2'] = createExportWrapper('sqlite3_close_v2', 1);
+var _sqlite3_busy_handler = Module['_sqlite3_busy_handler'] = createExportWrapper('sqlite3_busy_handler', 3);
+var _sqlite3_progress_handler = Module['_sqlite3_progress_handler'] = createExportWrapper('sqlite3_progress_handler', 4);
+var _sqlite3_busy_timeout = Module['_sqlite3_busy_timeout'] = createExportWrapper('sqlite3_busy_timeout', 2);
+var _sqlite3_interrupt = Module['_sqlite3_interrupt'] = createExportWrapper('sqlite3_interrupt', 1);
+var _sqlite3_is_interrupted = Module['_sqlite3_is_interrupted'] = createExportWrapper('sqlite3_is_interrupted', 1);
+var _sqlite3_create_function = Module['_sqlite3_create_function'] = createExportWrapper('sqlite3_create_function', 8);
+var _sqlite3_create_function_v2 = Module['_sqlite3_create_function_v2'] = createExportWrapper('sqlite3_create_function_v2', 9);
+var _sqlite3_create_window_function = Module['_sqlite3_create_window_function'] = createExportWrapper('sqlite3_create_window_function', 10);
+var _sqlite3_create_function16 = Module['_sqlite3_create_function16'] = createExportWrapper('sqlite3_create_function16', 8);
+var _sqlite3_overload_function = Module['_sqlite3_overload_function'] = createExportWrapper('sqlite3_overload_function', 3);
+var _sqlite3_trace_v2 = Module['_sqlite3_trace_v2'] = createExportWrapper('sqlite3_trace_v2', 4);
+var _sqlite3_commit_hook = Module['_sqlite3_commit_hook'] = createExportWrapper('sqlite3_commit_hook', 3);
+var _sqlite3_update_hook = Module['_sqlite3_update_hook'] = createExportWrapper('sqlite3_update_hook', 3);
+var _sqlite3_rollback_hook = Module['_sqlite3_rollback_hook'] = createExportWrapper('sqlite3_rollback_hook', 3);
+var _sqlite3_autovacuum_pages = Module['_sqlite3_autovacuum_pages'] = createExportWrapper('sqlite3_autovacuum_pages', 4);
+var _sqlite3_wal_autocheckpoint = Module['_sqlite3_wal_autocheckpoint'] = createExportWrapper('sqlite3_wal_autocheckpoint', 2);
+var _sqlite3_wal_hook = Module['_sqlite3_wal_hook'] = createExportWrapper('sqlite3_wal_hook', 3);
+var _sqlite3_wal_checkpoint = Module['_sqlite3_wal_checkpoint'] = createExportWrapper('sqlite3_wal_checkpoint', 2);
+var _sqlite3_wal_checkpoint_v2 = Module['_sqlite3_wal_checkpoint_v2'] = createExportWrapper('sqlite3_wal_checkpoint_v2', 5);
+var _sqlite3_error_offset = Module['_sqlite3_error_offset'] = createExportWrapper('sqlite3_error_offset', 1);
+var _sqlite3_errmsg16 = Module['_sqlite3_errmsg16'] = createExportWrapper('sqlite3_errmsg16', 1);
+var _sqlite3_errcode = Module['_sqlite3_errcode'] = createExportWrapper('sqlite3_errcode', 1);
+var _sqlite3_extended_errcode = Module['_sqlite3_extended_errcode'] = createExportWrapper('sqlite3_extended_errcode', 1);
+var _sqlite3_system_errno = Module['_sqlite3_system_errno'] = createExportWrapper('sqlite3_system_errno', 1);
+var _sqlite3_errstr = Module['_sqlite3_errstr'] = createExportWrapper('sqlite3_errstr', 1);
+var _sqlite3_limit = Module['_sqlite3_limit'] = createExportWrapper('sqlite3_limit', 3);
+var _sqlite3_open = Module['_sqlite3_open'] = createExportWrapper('sqlite3_open', 2);
+var _sqlite3_free_filename = Module['_sqlite3_free_filename'] = createExportWrapper('sqlite3_free_filename', 1);
+var _sqlite3_open_v2 = Module['_sqlite3_open_v2'] = createExportWrapper('sqlite3_open_v2', 4);
+var _sqlite3_open16 = Module['_sqlite3_open16'] = createExportWrapper('sqlite3_open16', 2);
+var _sqlite3_create_collation = Module['_sqlite3_create_collation'] = createExportWrapper('sqlite3_create_collation', 5);
+var _sqlite3_create_collation_v2 = Module['_sqlite3_create_collation_v2'] = createExportWrapper('sqlite3_create_collation_v2', 6);
+var _sqlite3_create_collation16 = Module['_sqlite3_create_collation16'] = createExportWrapper('sqlite3_create_collation16', 5);
+var _sqlite3_collation_needed = Module['_sqlite3_collation_needed'] = createExportWrapper('sqlite3_collation_needed', 3);
+var _sqlite3_collation_needed16 = Module['_sqlite3_collation_needed16'] = createExportWrapper('sqlite3_collation_needed16', 3);
+var _sqlite3_get_clientdata = Module['_sqlite3_get_clientdata'] = createExportWrapper('sqlite3_get_clientdata', 2);
+var _sqlite3_set_clientdata = Module['_sqlite3_set_clientdata'] = createExportWrapper('sqlite3_set_clientdata', 4);
+var _sqlite3_get_autocommit = Module['_sqlite3_get_autocommit'] = createExportWrapper('sqlite3_get_autocommit', 1);
+var _sqlite3_table_column_metadata = Module['_sqlite3_table_column_metadata'] = createExportWrapper('sqlite3_table_column_metadata', 9);
+var _sqlite3_sleep = Module['_sqlite3_sleep'] = createExportWrapper('sqlite3_sleep', 1);
+var _sqlite3_extended_result_codes = Module['_sqlite3_extended_result_codes'] = createExportWrapper('sqlite3_extended_result_codes', 2);
+var _sqlite3_test_control = Module['_sqlite3_test_control'] = createExportWrapper('sqlite3_test_control', 2);
+var _sqlite3_create_filename = Module['_sqlite3_create_filename'] = createExportWrapper('sqlite3_create_filename', 5);
+var _sqlite3_uri_parameter = Module['_sqlite3_uri_parameter'] = createExportWrapper('sqlite3_uri_parameter', 2);
+var _sqlite3_uri_key = Module['_sqlite3_uri_key'] = createExportWrapper('sqlite3_uri_key', 2);
+var _sqlite3_uri_boolean = Module['_sqlite3_uri_boolean'] = createExportWrapper('sqlite3_uri_boolean', 3);
+var _sqlite3_uri_int64 = Module['_sqlite3_uri_int64'] = createExportWrapper('sqlite3_uri_int64', 4);
+var _sqlite3_filename_database = Module['_sqlite3_filename_database'] = createExportWrapper('sqlite3_filename_database', 1);
+var _sqlite3_filename_journal = Module['_sqlite3_filename_journal'] = createExportWrapper('sqlite3_filename_journal', 1);
+var _sqlite3_filename_wal = Module['_sqlite3_filename_wal'] = createExportWrapper('sqlite3_filename_wal', 1);
+var _sqlite3_db_name = Module['_sqlite3_db_name'] = createExportWrapper('sqlite3_db_name', 2);
+var _sqlite3_db_filename = Module['_sqlite3_db_filename'] = createExportWrapper('sqlite3_db_filename', 2);
+var _sqlite3_db_readonly = Module['_sqlite3_db_readonly'] = createExportWrapper('sqlite3_db_readonly', 2);
+var _sqlite3_compileoption_used = Module['_sqlite3_compileoption_used'] = createExportWrapper('sqlite3_compileoption_used', 1);
+var _sqlite3_compileoption_get = Module['_sqlite3_compileoption_get'] = createExportWrapper('sqlite3_compileoption_get', 1);
+var _sqlite3_sourceid = Module['_sqlite3_sourceid'] = createExportWrapper('sqlite3_sourceid', 0);
+var _strerror = createExportWrapper('strerror', 1);
+var _malloc = Module['_malloc'] = createExportWrapper('malloc', 1);
+var _free = Module['_free'] = createExportWrapper('free', 1);
+var _RegisterExtensionFunctions = Module['_RegisterExtensionFunctions'] = createExportWrapper('RegisterExtensionFunctions', 1);
+var _getSqliteFree = Module['_getSqliteFree'] = createExportWrapper('getSqliteFree', 0);
+var _main = Module['_main'] = createExportWrapper('main', 2);
+var _libauthorizer_set_authorizer = Module['_libauthorizer_set_authorizer'] = createExportWrapper('libauthorizer_set_authorizer', 3);
+var _libfunction_create_function = Module['_libfunction_create_function'] = createExportWrapper('libfunction_create_function', 8);
+var _libhook_commit_hook = Module['_libhook_commit_hook'] = createExportWrapper('libhook_commit_hook', 3);
+var _libhook_update_hook = Module['_libhook_update_hook'] = createExportWrapper('libhook_update_hook', 3);
+var _libprogress_progress_handler = Module['_libprogress_progress_handler'] = createExportWrapper('libprogress_progress_handler', 4);
+var _libvfs_vfs_register = Module['_libvfs_vfs_register'] = createExportWrapper('libvfs_vfs_register', 6);
+var _fflush = createExportWrapper('fflush', 1);
+var _emscripten_builtin_memalign = createExportWrapper('emscripten_builtin_memalign', 2);
+var __emscripten_timeout = createExportWrapper('_emscripten_timeout', 2);
+var __emscripten_tempret_set = createExportWrapper('_emscripten_tempret_set', 1);
+var __emscripten_tempret_get = createExportWrapper('_emscripten_tempret_get', 0);
+var _emscripten_stack_init = () => (_emscripten_stack_init = wasmExports['emscripten_stack_init'])();
+var _emscripten_stack_get_free = () => (_emscripten_stack_get_free = wasmExports['emscripten_stack_get_free'])();
+var _emscripten_stack_get_base = () => (_emscripten_stack_get_base = wasmExports['emscripten_stack_get_base'])();
+var _emscripten_stack_get_end = () => (_emscripten_stack_get_end = wasmExports['emscripten_stack_get_end'])();
 var __emscripten_stack_restore = (a0) => (__emscripten_stack_restore = wasmExports['_emscripten_stack_restore'])(a0);
 var __emscripten_stack_alloc = (a0) => (__emscripten_stack_alloc = wasmExports['_emscripten_stack_alloc'])(a0);
 var _emscripten_stack_get_current = () => (_emscripten_stack_get_current = wasmExports['emscripten_stack_get_current'])();
-var ___cxa_increment_exception_refcount = (a0) => (___cxa_increment_exception_refcount = wasmExports['__cxa_increment_exception_refcount'])(a0);
-var dynCall_vijii = Module['dynCall_vijii'] = (a0, a1, a2, a3, a4, a5) => (dynCall_vijii = Module['dynCall_vijii'] = wasmExports['dynCall_vijii'])(a0, a1, a2, a3, a4, a5);
-var dynCall_iiiij = Module['dynCall_iiiij'] = (a0, a1, a2, a3, a4, a5) => (dynCall_iiiij = Module['dynCall_iiiij'] = wasmExports['dynCall_iiiij'])(a0, a1, a2, a3, a4, a5);
-var dynCall_viji = Module['dynCall_viji'] = (a0, a1, a2, a3, a4) => (dynCall_viji = Module['dynCall_viji'] = wasmExports['dynCall_viji'])(a0, a1, a2, a3, a4);
-var dynCall_viiiij = Module['dynCall_viiiij'] = (a0, a1, a2, a3, a4, a5, a6) => (dynCall_viiiij = Module['dynCall_viiiij'] = wasmExports['dynCall_viiiij'])(a0, a1, a2, a3, a4, a5, a6);
-var dynCall_iij = Module['dynCall_iij'] = (a0, a1, a2, a3) => (dynCall_iij = Module['dynCall_iij'] = wasmExports['dynCall_iij'])(a0, a1, a2, a3);
-var dynCall_iijii = Module['dynCall_iijii'] = (a0, a1, a2, a3, a4, a5) => (dynCall_iijii = Module['dynCall_iijii'] = wasmExports['dynCall_iijii'])(a0, a1, a2, a3, a4, a5);
-var dynCall_iiji = Module['dynCall_iiji'] = (a0, a1, a2, a3, a4) => (dynCall_iiji = Module['dynCall_iiji'] = wasmExports['dynCall_iiji'])(a0, a1, a2, a3, a4);
-var dynCall_iiiiiij = Module['dynCall_iiiiiij'] = (a0, a1, a2, a3, a4, a5, a6, a7) => (dynCall_iiiiiij = Module['dynCall_iiiiiij'] = wasmExports['dynCall_iiiiiij'])(a0, a1, a2, a3, a4, a5, a6, a7);
-var dynCall_ji = Module['dynCall_ji'] = (a0, a1) => (dynCall_ji = Module['dynCall_ji'] = wasmExports['dynCall_ji'])(a0, a1);
-var _sqlite3_version = Module['_sqlite3_version'] = 13824;
+var ___cxa_increment_exception_refcount = createExportWrapper('__cxa_increment_exception_refcount', 1);
+var dynCall_ij = Module['dynCall_ij'] = createExportWrapper('dynCall_ij', 3);
+var dynCall_iiiij = Module['dynCall_iiiij'] = createExportWrapper('dynCall_iiiij', 6);
+var dynCall_vijii = Module['dynCall_vijii'] = createExportWrapper('dynCall_vijii', 6);
+var dynCall_iij = Module['dynCall_iij'] = createExportWrapper('dynCall_iij', 4);
+var dynCall_iijii = Module['dynCall_iijii'] = createExportWrapper('dynCall_iijii', 6);
+var dynCall_iiji = Module['dynCall_iiji'] = createExportWrapper('dynCall_iiji', 5);
+var dynCall_iiiiiij = Module['dynCall_iiiiiij'] = createExportWrapper('dynCall_iiiiiij', 8);
+var dynCall_ji = Module['dynCall_ji'] = createExportWrapper('dynCall_ji', 2);
+var dynCall_viji = Module['dynCall_viji'] = createExportWrapper('dynCall_viji', 5);
+var dynCall_viiiij = Module['dynCall_viiiij'] = createExportWrapper('dynCall_viiiij', 7);
+var dynCall_jiji = Module['dynCall_jiji'] = createExportWrapper('dynCall_jiji', 5);
+var _sqlite3_version = Module['_sqlite3_version'] = 1024;
 
 // include: postamble.js
 // === Auto-generated postamble setup entry stuff ===
@@ -5056,6 +5593,277 @@ Module['stringToUTF16'] = stringToUTF16;
 Module['UTF32ToString'] = UTF32ToString;
 Module['stringToUTF32'] = stringToUTF32;
 Module['writeArrayToMemory'] = writeArrayToMemory;
+var missingLibrarySymbols = [
+  'writeI53ToI64',
+  'writeI53ToI64Clamped',
+  'writeI53ToI64Signaling',
+  'writeI53ToU64Clamped',
+  'writeI53ToU64Signaling',
+  'readI53FromU64',
+  'convertI32PairToI53',
+  'convertU32PairToI53',
+  'setTempRet0',
+  'inetPton4',
+  'inetNtop4',
+  'inetPton6',
+  'inetNtop6',
+  'readSockaddr',
+  'writeSockaddr',
+  'emscriptenLog',
+  'readEmAsmArgs',
+  'jstoi_q',
+  'listenOnce',
+  'autoResumeAudioContext',
+  'dynCallLegacy',
+  'getDynCaller',
+  'dynCall',
+  'asmjsMangle',
+  'HandleAllocator',
+  'getNativeTypeSize',
+  'STACK_SIZE',
+  'STACK_ALIGN',
+  'POINTER_SIZE',
+  'ASSERTIONS',
+  'removeFunction',
+  'reallyNegative',
+  'unSign',
+  'strLen',
+  'reSign',
+  'formatString',
+  'lengthBytesUTF16',
+  'lengthBytesUTF32',
+  'stringToNewUTF8',
+  'registerKeyEventCallback',
+  'maybeCStringToJsString',
+  'findEventTarget',
+  'getBoundingClientRect',
+  'fillMouseEventData',
+  'registerMouseEventCallback',
+  'registerWheelEventCallback',
+  'registerUiEventCallback',
+  'registerFocusEventCallback',
+  'fillDeviceOrientationEventData',
+  'registerDeviceOrientationEventCallback',
+  'fillDeviceMotionEventData',
+  'registerDeviceMotionEventCallback',
+  'screenOrientation',
+  'fillOrientationChangeEventData',
+  'registerOrientationChangeEventCallback',
+  'fillFullscreenChangeEventData',
+  'registerFullscreenChangeEventCallback',
+  'JSEvents_requestFullscreen',
+  'JSEvents_resizeCanvasForFullscreen',
+  'registerRestoreOldStyle',
+  'hideEverythingExceptGivenElement',
+  'restoreHiddenElements',
+  'setLetterbox',
+  'softFullscreenResizeWebGLRenderTarget',
+  'doRequestFullscreen',
+  'fillPointerlockChangeEventData',
+  'registerPointerlockChangeEventCallback',
+  'registerPointerlockErrorEventCallback',
+  'requestPointerLock',
+  'fillVisibilityChangeEventData',
+  'registerVisibilityChangeEventCallback',
+  'registerTouchEventCallback',
+  'fillGamepadEventData',
+  'registerGamepadEventCallback',
+  'registerBeforeUnloadEventCallback',
+  'fillBatteryEventData',
+  'battery',
+  'registerBatteryEventCallback',
+  'setCanvasElementSize',
+  'getCanvasElementSize',
+  'jsStackTrace',
+  'getCallstack',
+  'convertPCtoSourceLocation',
+  'checkWasiClock',
+  'wasiRightsToMuslOFlags',
+  'wasiOFlagsToMuslOFlags',
+  'safeSetTimeout',
+  'setImmediateWrapped',
+  'safeRequestAnimationFrame',
+  'clearImmediateWrapped',
+  'polyfillSetImmediate',
+  'registerPostMainLoop',
+  'registerPreMainLoop',
+  'getPromise',
+  'makePromise',
+  'idsToPromises',
+  'makePromiseCallback',
+  'ExceptionInfo',
+  'findMatchingCatch',
+  'Browser_asyncPrepareDataCounter',
+  'arraySum',
+  'addDays',
+  'getSocketFromFD',
+  'getSocketAddress',
+  'FS_unlink',
+  'FS_mkdirTree',
+  '_setNetworkCallback',
+  'heapObjectForWebGLType',
+  'toTypedArrayIndex',
+  'webgl_enable_ANGLE_instanced_arrays',
+  'webgl_enable_OES_vertex_array_object',
+  'webgl_enable_WEBGL_draw_buffers',
+  'webgl_enable_WEBGL_multi_draw',
+  'webgl_enable_EXT_polygon_offset_clamp',
+  'webgl_enable_EXT_clip_control',
+  'webgl_enable_WEBGL_polygon_mode',
+  'emscriptenWebGLGet',
+  'computeUnpackAlignedImageSize',
+  'colorChannelsInGlTextureFormat',
+  'emscriptenWebGLGetTexPixelData',
+  'emscriptenWebGLGetUniform',
+  'webglGetUniformLocation',
+  'webglPrepareUniformLocationsBeforeFirstUse',
+  'webglGetLeftBracePos',
+  'emscriptenWebGLGetVertexAttrib',
+  '__glGetActiveAttribOrUniform',
+  'writeGLArray',
+  'registerWebGlEventCallback',
+  'ALLOC_NORMAL',
+  'ALLOC_STACK',
+  'allocate',
+  'writeStringToMemory',
+  'writeAsciiToMemory',
+  'setErrNo',
+  'demangle',
+  'stackTrace',
+];
+missingLibrarySymbols.forEach(missingLibrarySymbol)
+
+var unexportedSymbols = [
+  'run',
+  'addOnPreRun',
+  'addOnInit',
+  'addOnPreMain',
+  'addOnExit',
+  'addOnPostRun',
+  'addRunDependency',
+  'removeRunDependency',
+  'out',
+  'err',
+  'callMain',
+  'abort',
+  'wasmMemory',
+  'wasmExports',
+  'writeStackCookie',
+  'checkStackCookie',
+  'readI53FromI64',
+  'convertI32PairToI53Checked',
+  'stackSave',
+  'stackRestore',
+  'stackAlloc',
+  'ptrToString',
+  'zeroMemory',
+  'exitJS',
+  'getHeapMax',
+  'growMemory',
+  'ENV',
+  'ERRNO_CODES',
+  'strError',
+  'DNS',
+  'Protocols',
+  'Sockets',
+  'timers',
+  'warnOnce',
+  'readEmAsmArgsArray',
+  'jstoi_s',
+  'getExecutableName',
+  'handleException',
+  'keepRuntimeAlive',
+  'runtimeKeepalivePush',
+  'runtimeKeepalivePop',
+  'callUserCallback',
+  'maybeExit',
+  'asyncLoad',
+  'alignMemory',
+  'mmapAlloc',
+  'wasmTable',
+  'noExitRuntime',
+  'getCFunc',
+  'uleb128Encode',
+  'sigToWasmTypes',
+  'generateFuncType',
+  'convertJsFunctionToWasm',
+  'freeTableIndexes',
+  'functionsInTableMap',
+  'getEmptyTableSlot',
+  'updateTableMap',
+  'getFunctionAddress',
+  'PATH',
+  'PATH_FS',
+  'UTF8Decoder',
+  'UTF8ArrayToString',
+  'stringToUTF8Array',
+  'stringToAscii',
+  'UTF16Decoder',
+  'stringToUTF8OnStack',
+  'JSEvents',
+  'specialHTMLTargets',
+  'findCanvasEventTarget',
+  'currentFullscreenStrategy',
+  'restoreOldWindowedStyle',
+  'UNWIND_CACHE',
+  'ExitStatus',
+  'getEnvStrings',
+  'doReadv',
+  'doWritev',
+  'initRandomFill',
+  'randomFill',
+  'promiseMap',
+  'uncaughtExceptionCount',
+  'exceptionLast',
+  'exceptionCaught',
+  'Browser',
+  'getPreloadedImageData__data',
+  'wget',
+  'MONTH_DAYS_REGULAR',
+  'MONTH_DAYS_LEAP',
+  'MONTH_DAYS_REGULAR_CUMULATIVE',
+  'MONTH_DAYS_LEAP_CUMULATIVE',
+  'isLeapYear',
+  'ydayFromDate',
+  'SYSCALLS',
+  'preloadPlugins',
+  'FS_createPreloadedFile',
+  'FS_modeStringToFlags',
+  'FS_getMode',
+  'FS_stdin_getChar_buffer',
+  'FS_stdin_getChar',
+  'FS_createPath',
+  'FS_createDevice',
+  'FS_readFile',
+  'FS',
+  'FS_createDataFile',
+  'FS_createLazyFile',
+  'MEMFS',
+  'TTY',
+  'PIPEFS',
+  'SOCKFS',
+  'tempFixedLengthArray',
+  'miniTempWebGLFloatBuffers',
+  'miniTempWebGLIntBuffers',
+  'GL',
+  'AL',
+  'GLUT',
+  'EGL',
+  'GLEW',
+  'IDBStore',
+  'runAndAbortIfError',
+  'Asyncify',
+  'Fibers',
+  'SDL',
+  'SDL_gfx',
+  'allocateUTF8',
+  'allocateUTF8OnStack',
+  'print',
+  'printErr',
+  'adapters_support',
+];
+unexportedSymbols.forEach(unexportedRuntimeSymbol);
+
 
 
 var calledRun;
@@ -5067,6 +5875,8 @@ dependenciesFulfilled = function runCaller() {
 };
 
 function callMain() {
+  assert(runDependencies == 0, 'cannot call main when async dependencies remain! (listen on Module["onRuntimeInitialized"])');
+  assert(__ATPRERUN__.length == 0, 'cannot call main when preRun functions remain to be called');
 
   var entryFunction = _main;
 
@@ -5092,11 +5902,22 @@ function callMain() {
   }
 }
 
+function stackCheckInit() {
+  // This is normally called automatically during __wasm_call_ctors but need to
+  // get these values before even running any of the ctors so we call it redundantly
+  // here.
+  _emscripten_stack_init();
+  // TODO(sbc): Move writeStackCookie to native to to avoid this.
+  writeStackCookie();
+}
+
 function run() {
 
   if (runDependencies > 0) {
     return;
   }
+
+  stackCheckInit();
 
   preRun();
 
@@ -5135,6 +5956,46 @@ function run() {
   } else
   {
     doRun();
+  }
+  checkStackCookie();
+}
+
+function checkUnflushedContent() {
+  // Compiler settings do not allow exiting the runtime, so flushing
+  // the streams is not possible. but in ASSERTIONS mode we check
+  // if there was something to flush, and if so tell the user they
+  // should request that the runtime be exitable.
+  // Normally we would not even include flush() at all, but in ASSERTIONS
+  // builds we do so just for this check, and here we see if there is any
+  // content to flush, that is, we check if there would have been
+  // something a non-ASSERTIONS build would have not seen.
+  // How we flush the streams depends on whether we are in SYSCALLS_REQUIRE_FILESYSTEM=0
+  // mode (which has its own special function for this; otherwise, all
+  // the code is inside libc)
+  var oldOut = out;
+  var oldErr = err;
+  var has = false;
+  out = err = (x) => {
+    has = true;
+  }
+  try { // it doesn't matter if it fails
+    _fflush(0);
+    // also flush in the JS FS layer
+    ['stdout', 'stderr'].forEach((name) => {
+      var info = FS.analyzePath('/dev/' + name);
+      if (!info) return;
+      var stream = info.object;
+      var rdev = stream.rdev;
+      var tty = TTY.ttys[rdev];
+      if (tty?.output?.length) {
+        has = true;
+      }
+    });
+  } catch(e) {}
+  out = oldOut;
+  err = oldErr;
+  if (has) {
+    warnOnce('stdio streams had content in them that was not flushed. you should set EXIT_RUNTIME to 1 (see the Emscripten FAQ), or make sure to emit a newline when you printf etc.');
   }
 }
 
@@ -5421,6 +6282,21 @@ run();
 
 moduleRtn = readyPromise;
 
+// Assertion for attempting to access module properties on the incoming
+// moduleArg.  In the past we used this object as the prototype of the module
+// and assigned properties to it, but now we return a distinct object.  This
+// keeps the instance private until it is ready (i.e the promise has been
+// resolved).
+for (const prop of Object.keys(Module)) {
+  if (!(prop in moduleArg)) {
+    Object.defineProperty(moduleArg, prop, {
+      configurable: true,
+      get() {
+        abort(`Access to module property ('${prop}') is no longer possible via the module constructor argument; Instead, use the result of the module constructor.`)
+      }
+    });
+  }
+}
 // end include: postamble_modularize.js
 
 
