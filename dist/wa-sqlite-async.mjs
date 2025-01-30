@@ -4066,7 +4066,7 @@ function dbg(...args) {
       checkStackCookie();
       if (e instanceof WebAssembly.RuntimeError) {
         if (_emscripten_stack_get_current() <= 0) {
-          err('Stack overflow detected.  You can try increasing -sSTACK_SIZE (currently set to 524288)');
+          err('Stack overflow detected.  You can try increasing -sSTACK_SIZE (currently set to 8388608)');
         }
       }
       quit_(1, e);
@@ -4725,7 +4725,7 @@ function dbg(...args) {
   Disabled:3,
   },
   state:0,
-  StackSize:24576,
+  StackSize:8388608,
   currData:null,
   handleSleepReturnValue:0,
   exportCallStack:[],
