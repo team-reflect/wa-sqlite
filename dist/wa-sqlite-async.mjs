@@ -4170,7 +4170,7 @@ var tempI64;
   Disabled:3,
   },
   state:0,
-  StackSize:16384,
+  StackSize:8388608,
   currData:null,
   handleSleepReturnValue:0,
   exportCallStack:[],
