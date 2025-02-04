@@ -857,7 +857,7 @@ export function Factory(Module) {
     if (allowed.includes(result)) return result;
     const message = db ?
       Module.ccall('sqlite3_errmsg', 'string', ['number'], [db]) :
-      fname;
+      `SQLite error code: ${result}`;
     throw new SQLiteError(message, result);
   }
 
