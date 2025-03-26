@@ -6,16 +6,24 @@ EXTENSION_FUNCTIONS = extension-functions.c
 EXTENSION_FUNCTIONS_URL = https://www.sqlite.org/contrib/download/extension-functions.c?get=25
 EXTENSION_FUNCTIONS_SHA3 = ee39ddf5eaa21e1d0ebcbceeab42822dd0c4f82d8039ce173fd4814807faabfa
 
+# sqlite-better-trigram extension
+# https://github.com/streetwriters/sqlite-better-trigram
+EXTENSION_BETTER_TRIGRAM=better-trigram.c
+EXTENSION_BETTER_TRIGRAM_VERSION=0.0.3
+EXTENSION_BETTER_TRIGRAM_DIR=sqlite-better-trigram-v${EXTENSION_BETTER_TRIGRAM_VERSION}
+EXTENSION_BETTER_TRIGRAM_URL=https://github.com/streetwriters/sqlite-better-trigram/archive/refs/tags/v${EXTENSION_BETTER_TRIGRAM_VERSION}.tar.gz
+
 # source files
 CFILES = \
 	sqlite3.c \
-	extension-functions.c \
 	main.c \
 	libauthorizer.c \
 	libfunction.c \
 	libhook.c \
 	libprogress.c \
 	libvfs.c \
+	${EXTENSION_FUNCTIONS} \
+	${EXTENSION_BETTER_TRIGRAM} \
 	$(CFILES_EXTRA)
 
 JSFILES = \
@@ -28,6 +36,7 @@ JSFILES = \
 vpath %.c src
 vpath %.c deps
 vpath %.c deps/$(SQLITE_VERSION)
+vpath %.c deps/$(EXTENSION_BETTER_TRIGRAM_DIR)
 
 EXPORTED_FUNCTIONS = src/exported_functions.json
 EXPORTED_RUNTIME_METHODS = src/extra_exported_runtime_methods.json
@@ -43,6 +52,7 @@ EMCC ?= emcc
 
 CFLAGS_COMMON = \
 	-I'deps/$(SQLITE_VERSION)' \
+	-I'cache/$(SQLITE_VERSION)/ext/fts5' \
 	-Wno-non-literal-null-conversion \
 	$(CFLAGS_EXTRA)
 CFLAGS_DEBUG = -g $(CFLAGS_COMMON)
@@ -152,6 +162,10 @@ deps/$(EXTENSION_FUNCTIONS): cache/$(EXTENSION_FUNCTIONS)
 	rm -rf deps/sha3 $@
 	cp 'cache/$(EXTENSION_FUNCTIONS)' $@
 
+deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.h deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c:
+	mkdir -p deps/${EXTENSION_BETTER_TRIGRAM_DIR}
+	curl -LsS ${EXTENSION_BETTER_TRIGRAM_URL} | tar -xzf - -C deps/${EXTENSION_BETTER_TRIGRAM_DIR}/ --strip-components=1
+
 ## tmp
 .PHONY: clean-tmp
 clean-tmp:
@@ -165,6 +179,13 @@ tmp/obj/dist/%.o: %.c
 	mkdir -p tmp/obj/dist
 	$(EMCC) $(CFLAGS_DIST) $(WASQLITE_DEFINES) $^ -c -o $@
 
+tmp/obj/debug/better-trigram.o: deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c
+	mkdir -p tmp/obj/debug
+	$(EMCC) $(CFLAGS_DEBUG) $(WASQLITE_DEFINES) $^ -c -o $@
+
+tmp/obj/dist/better-trigram.o: deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c
+	mkdir -p tmp/obj/dist
+	$(EMCC) $(CFLAGS_DIST) $(WASQLITE_DEFINES) $^ -c -o $@
 
 ## debug
 .PHONY: clean-debug
