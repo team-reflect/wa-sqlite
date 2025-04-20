@@ -13,6 +13,13 @@ EXTENSION_VEC_VERSION=0.1.6
 EXTENSION_VEC_DIR=sqlite-vec-v${EXTENSION_VEC_VERSION}
 EXTENSION_VEC_URL=https://github.com/team-reflect/sqlite-vec/releases/download/v${EXTENSION_VEC_VERSION}/sqlite-vec-${EXTENSION_VEC_VERSION}-amalgamation.tar.gz
 
+# sqlite-better-trigram extension
+# https://github.com/streetwriters/sqlite-better-trigram
+EXTENSION_BETTER_TRIGRAM=better-trigram.c
+EXTENSION_BETTER_TRIGRAM_VERSION=0.0.3
+EXTENSION_BETTER_TRIGRAM_DIR=sqlite-better-trigram-v${EXTENSION_BETTER_TRIGRAM_VERSION}
+EXTENSION_BETTER_TRIGRAM_URL=https://github.com/streetwriters/sqlite-better-trigram/archive/refs/tags/v${EXTENSION_BETTER_TRIGRAM_VERSION}.tar.gz
+
 # source files
 CFILES = \
 	sqlite3.c \
@@ -24,6 +31,7 @@ CFILES = \
 	libvfs.c \
 	${EXTENSION_FUNCTIONS} \
 	${EXTENSION_VEC} \
+	${EXTENSION_BETTER_TRIGRAM} \
 	$(CFILES_EXTRA)
 
 JSFILES = \
@@ -37,6 +45,7 @@ vpath %.c src
 vpath %.c deps
 vpath %.c deps/$(SQLITE_VERSION)
 vpath %.c deps/$(EXTENSION_VEC_DIR)
+vpath %.c deps/$(EXTENSION_BETTER_TRIGRAM_DIR)
 
 EXPORTED_FUNCTIONS = src/exported_functions.json
 EXPORTED_RUNTIME_METHODS = src/extra_exported_runtime_methods.json
@@ -52,6 +61,7 @@ EMCC ?= emcc
 
 CFLAGS_COMMON = \
 	-I'deps/$(SQLITE_VERSION)' \
+	-I'cache/$(SQLITE_VERSION)/ext/fts5' \
 	-Wno-non-literal-null-conversion \
 	-DSQLITE_VEC_ENABLE_WASM_SIMD -msimd128 \
 	$(CFLAGS_EXTRA)
@@ -166,6 +176,10 @@ deps/${EXTENSION_VEC_DIR}/sqlite-vec.h deps/${EXTENSION_VEC_DIR}/sqlite-vec.c:
 	mkdir -p deps/${EXTENSION_VEC_DIR}
 	curl -LsS ${EXTENSION_VEC_URL} | tar -xzf - -C deps/${EXTENSION_VEC_DIR}/
 
+deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.h deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c:
+	mkdir -p deps/${EXTENSION_BETTER_TRIGRAM_DIR}
+	curl -LsS ${EXTENSION_BETTER_TRIGRAM_URL} | tar -xzf - -C deps/${EXTENSION_BETTER_TRIGRAM_DIR}/ --strip-components=1
+
 ## tmp
 .PHONY: clean-tmp
 clean-tmp:
@@ -184,6 +198,11 @@ tmp/obj/debug/sqlite-vec.o: deps/${EXTENSION_VEC_DIR}/sqlite-vec.c
 	$(EMCC) $(CFLAGS_DEBUG) $(WASQLITE_DEFINES) $^ -c -o $@
 
 tmp/obj/dist/sqlite-vec.o: deps/${EXTENSION_VEC_DIR}/sqlite-vec.c
+tmp/obj/debug/better-trigram.o: deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c
+	mkdir -p tmp/obj/debug
+	$(EMCC) $(CFLAGS_DEBUG) $(WASQLITE_DEFINES) $^ -c -o $@
+
+tmp/obj/dist/better-trigram.o: deps/${EXTENSION_BETTER_TRIGRAM_DIR}/better-trigram.c
 	mkdir -p tmp/obj/dist
 	$(EMCC) $(CFLAGS_DIST) $(WASQLITE_DEFINES) $^ -c -o $@
 

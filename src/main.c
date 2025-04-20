@@ -3,6 +3,7 @@
 #include <sqlite3.h>
 
 extern void sqlite3_vec_init(void);
+extern void sqlite3_bettertrigram_init();
 
 // Some SQLite API functions take a pointer to a function that frees
 // memory. Although we could add a C binding to a JavaScript function
@@ -16,5 +17,6 @@ void* EMSCRIPTEN_KEEPALIVE getSqliteFree() {
 int main() {
   sqlite3_initialize();
   sqlite3_auto_extension(&sqlite3_vec_init);
+  sqlite3_auto_extension(&sqlite3_bettertrigram_init);
   return 0;
 }
